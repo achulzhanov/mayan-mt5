@@ -1,0 +1,259 @@
+﻿lemma_kek,countability_kek,gloss_en,gloss_en_f,countability_en,gloss_es,gloss_es_f,gender_es,countability_es,class,loan,notes,p_weight,p_debug_percent
+mes,count,cat,,count,gato,,m,count,animal_domesticated,FALSE,,1536.974516,0.566953672
+wakax,count,cow,,count,vaca,,f,count,animal_domesticated,FALSE,,584.3414134,0.215549774
+tz'i',count,dog,,count,perro,,m,count,animal_domesticated,FALSE,,2511.886432,0.926575698
+alq',count,domestic animal,,count,animal doméstico,,m,count,animal_domesticated,FALSE,,1609.409893,0.593673375
+b'uur,count,donkey,,count,burro,,m,count,animal_domesticated,TRUE,,374.397839,0.138106538
+yuk,count,goat,,count,cabra,,f,count,animal_domesticated,FALSE,,478.6300923,0.17655536
+tzumuk,count,horse,,count,caballo,,m,count,animal_domesticated,FALSE,,1490.504643,0.549812031
+b'oyx,count,ox,,count,buey,,m,count,animal_domesticated,FALSE,,205.7469156,0.075895188
+aaq,count,pig,,count,cerdo,,m,count,animal_domesticated,FALSE,,575.4399373,0.212266229
+kuy,count,piglet,,count,cerdito,,m,count,animal_domesticated,,,75.8577575,0.027982139
+tzo',count,rooster,,count,gallo,,m,count,animal_domesticated,FALSE,"From: S. Steward, Q'eqchi' Grammar",443.2682923,0.163511225
+tzukxul,count,sheep,,count,oveja,,f,count,animal_domesticated,FALSE,,621.3457517,0.229199802
+ahin,count,alligator,,count,lagarto,,m,count,animal_wild,FALSE,,179.1980722,0.066101945
+tz'uq'tz'un,count,anteater,,count,tamandúa,,f,count,animal_wild,FALSE,,33.11311215,0.012214647
+ib'oy,count,armadillo,,count,cusuco,,m,count,animal_wild,FALSE,from Nahuatl,63.09573445,0.023274529
+seel xul,count,armadillo,,count,cusuco,,m,count,animal_wild,FALSE,from Nahuatl,63.09573445,0.023274529
+ch'ok'oj,count,bat,,count,murciélago,,m,count,animal_wild,FALSE,,735.6422545,0.271361088
+sotz',count,bat,,count,murciélago,,m,count,animal_wild,FALSE,,735.6422545,0.271361088
+tz'uq'tz'un,count,bear,,count,oso,,m,count,animal_wild,FALSE,,33.11311215,0.012214647
+tz'ik,count,bird,,count,ave,,m,count,animal_wild,FALSE,,1220.862254,0.450347309
+keji xul,count,boa constrictor,,count,boa constrictor,,f,count,animal_wild,FALSE,,131.8256739,0.048627384
+ch'o hix,count,bobcat,,count,gato montés,,m,count,animal_wild,FALSE,,1202.264435,0.443487012
+yak,count,bush cat,,count,tigrillo,,m,count,animal_wild,FALSE,,1536.974516,0.566953672
+b'oxcar,count,catfish,,count,bagre,,m,count,animal_wild,FALSE,,171.1328304,0.063126867
+yakl,count,coyote,,count,coyote,,m,count,animal_wild,FALSE,,173.7800829,0.064103376
+tap,count,crab,,count,cangrejo,,m,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",321.1194909,0.118453411
+ch'erok,count,crow,,count,cuervo,,m,count,animal_wild,FALSE,,341.4548874,0.12595466
+kej,count,deer,,count,venado,,m,count,animal_wild,FALSE,,558.0417175,0.205848436
+q'olxul kar,count,dolphin,,count,delfín,,m,count,animal_wild,FALSE,,279.6833846,0.103168608
+t'iu,count,eagle,,count,águila,,m,count,animal_wild,FALSE,,566.6740606,0.209032704
+t'iw,count,eagle,,count,águila,,m,count,animal_wild,FALSE,,566.6740606,0.209032704
+k'anti kar,count,eel,,count,anguila,,f,count,animal_wild,FALSE,,142.3420884,0.052506641
+amoch,count,frog,,count,rana,,f,count,animal_wild,FALSE,,392.0426655,0.144615299
+pelpel,count,frog,,count,rana,,f,count,animal_wild,FALSE,a type of frog (found in Chulac),392.0426655,0.144615299
+k'uch,count,hawk,,count,halcón,,m,count,animal_wild,FALSE,,346.7368505,0.127903051
+b'atz',count,howler monkey,,count,zaraguate,,m,count,animal_wild,FALSE,,516.8128856,0.190640092
+iwaan,count,iguana,,count,iguana,,f,count,animal_wild,FALSE,,120.2264435,0.044348701
+b'alam,count,jaguar,,count,jaguar,,m,count,animal_wild,FALSE,,218.7761624,0.08070137
+tolich,count,magpie,,count,urraca,,f,count,animal_wild,FALSE,,95.4992586,0.035227426
+ch'o,count,mouse,,count,ratón,,m,count,animal_wild,FALSE,,747.0218989,0.275558771
+waron,count,owl,,count,búho,,m,count,animal_wild,FALSE,,380.1893963,0.140242907
+halaw,count,paca,,count,tepezcuintle,,m,count,animal_wild,FALSE,,26.30267992,0.009702439
+puyuch,count,parakeet,,count,perico,,m,count,animal_wild,FALSE,,171.1328304,0.063126867
+cho' cho,count,parrot,,count,loro,,m,count,animal_wild,FALSE,,229.0867653,0.084504708
+tolich,count,parrot,,count,loro,,m,count,animal_wild,FALSE,,95.4992586,0.035227426
+tonq',count,partridge,,count,perdiz,,m,count,animal_wild,FALSE,,135.9356391,0.050143453
+aj k'ix uch,count,porcupine,,count,puerco espín,,m,count,animal_wild,FALSE,,199.5262315,0.073600524
+q'uq',count,quetzal bird,,count,quetzal,,m,count,animal_wild,FALSE,,1220.862254,0.450347309
+imul,count,rabbit,,count,conejo,,m,count,animal_wild,FALSE,,501.1872336,0.184876157
+aj ou,count,raccoon,,count,mapache,,m,count,animal_wild,FALSE,,151.3561248,0.055831707
+ch'o,count,rat,,count,rata,,f,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",747.0218989,0.275558771
+pemech,count,shellfish,,count,marisco,,m,count,animal_wild,FALSE,,125.8925412,0.046438791
+k'anti',count,snake,,count,serpiente,,f,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",660.693448,0.24371424
+k'anti',count,snake,,count,culebra,,f,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",660.693448,0.24371424
+tz'entz'eu,count,sparrow,,count,gorrión,,m,count,animal_wild,FALSE,,208.9296131,0.07706921
+tz'unun,count,sparrow,,count,gorrión,,m,count,animal_wild,FALSE,,208.9296131,0.07706921
+am,count,spider,,count,araña,,f,count,animal_wild,FALSE,,681.2920691,0.251312586
+max,count,spider monkey,,count,mico araña,,m,count,animal_wild,FALSE,,681.2920691,0.251312586
+kuk,count,squirrel,,count,ardilla,,f,count,animal_wild,FALSE,,288.4031503,0.106385124
+mulukut,count,tadpole,,count,renacuajo,,m,count,animal_wild,FALSE,,47.13389536,0.017386583
+halaw,count,tepiscuintle,,count,tepezcuintle,,m,count,animal_wild,FALSE,,26.30267992,0.009702439
+hix,count,tiger,,count,tigre,,m,count,animal_wild,FALSE,,735.6422545,0.271361088
+amoch,count,toad,,count,sapo,,m,count,animal_wild,FALSE,,392.0426655,0.144615299
+k'oopopo',count,toad,,count,sapo,,m,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",239.8832919,0.088487292
+machak,count,trout,,count,trucha,,f,count,animal_wild,FALSE,,331.1311215,0.122146466
+ak'ach,count,turkey,,count,pavo,,m,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",1096.478196,0.404464962
+ak'ach,count,turkey,,count,chompipe,,m,count,animal_wild,FALSE,"From: S. Steward, Q'eqchi' Grammar",1096.478196,0.404464962
+kok,count,turtle,,count,tortuga,,f,count,animal_wild,FALSE,,404.2654874,0.14912401
+ikb'olay,count,viper,,count,víbora,,f,count,animal_wild,FALSE,,160.9409893,0.059367338
+k'amb'olay,count,viper,,count,víbora,,f,count,animal_wild,FALSE,,160.9409893,0.059367338
+b'ajlak xul,count,weasel,,count,comadreja,,f,count,animal_wild,FALSE,,133.8648842,0.049379601
+saqb'in,count,weasel,,count,comadreja,,f,count,animal_wild,FALSE,,133.8648842,0.049379601
+chakaw,count,wild boar,,count,jabalí,,m,count,animal_wild,FALSE,,1584.893192,0.584629742
+b'itz,count,worm,,count,gusano,,m,count,animal_wild,FALSE,a worm with hair,326.0868859,0.120285766
+b'onb'il tzimitz,count,zebra,,count,cebra,,f,count,animal_wild,FALSE,,184.7849797,0.068162824
+artal,count,altar,,count,altar,,m,count,artifact,TRUE,,493.5524741,0.182059874
+lotz,mass,agua ardiente,,mass,agua ardiente,,f,mass,beverage,FALSE,a distilled alcoholic spirit,4570.881896,1.686090594
+ha' na'kaltesin,mass,alcohol,,mass,alcohol,,m,mass,beverage,FALSE,alcohol (beverage),1183.949922,0.43673122
+ch'amb'ul,mass,atol xuco,,mass,atol xuco,,m,mass,beverage,FALSE,"a corn-based drink, thick and usually containing, salt, chili pepper, and black bean",21.5443469,0.007947202
+kape',mass,coffee,,mass,café,,m,mass,beverage,FALSE,coffee (beverage),1737.800829,0.641033765
+siwan ya',mass,moonshine,,mass,guaro,,m,mass,beverage,FALSE,illegally produced spirit,89.8117861,0.033129451
+ab'aj,count,testicles,,plural,testículos,,m,plural,body part,FALSE,,153.6974516,0.056695367
+yupus,count,anus,,count,ano,,m,count,body_part,FALSE,,357.5471605,0.13189072
+tel,count,arm,,count,brazo,,m,count,body_part,FALSE,,1423.420884,0.525066413
+ix,count,back,,count,espalda,,f,count,body_part,FALSE,,10633.26572,3.922361092
+sa',count,belly,,count,panza,,f,count,body_part,FALSE,,884.4365191,0.326247785
+ulul,count,brain,,count,cerebro,,m,count,body_part,FALSE,,1964.86779,0.724793415
+ch'oolok,count,breastbone,,count,esternón,,m,count,body_part,FALSE,,65.06288749,0.024000166
+su oq,count,calf,,count,pantorrilla,,m,count,body_part,FALSE,leg calf,297.3947745,0.109701923
+xik,count,ear,,count,oreja,,f,count,body_part,FALSE,,898.117861,0.33129451
+xnaq' u,count,eye,,count,ojo,,m,count,body_part,FALSE,,2221.604092,0.819497385
+xmatzab',count,eyebrow,,count,ceja,,f,count,body_part,FALSE,,202.6127013,0.07473905
+oq,count,foot,,count,pie,,m,count,body_part,FALSE,,1964.86779,0.724793415
+uq,count,hand,,count,mano,,f,count,body_part,FALSE,,4042.654874,1.491240096
+jolom,count,head,,count,cabeza,,f,count,body_part,FALSE,,4713.389536,1.738658303
+ch'ool,count,heart,,count,corazón,,f,count,body_part,FALSE,,0,0
+xkalom,count,jaw,,count,mandíbula,,f,count,body_part,FALSE,,450.1252062,0.166040579
+a',count,leg,,count,pierna,,f,count,body_part,FALSE,,1278.399719,0.471571524
+ch'och',count,liver,,count,hígado,,m,count,body_part,FALSE,,611.8805758,0.225708322
+kux,count,neck,,count,cuello,,m,count,body_part,FALSE,,1220.862254,0.450347309
+u'uj,count,nose,,count,nariz,,f,count,body_part,FALSE,,1015.468992,0.374582576
+tzelek,count,shin,,count,espinilla,,f,count,body_part,FALSE,,288.4031503,0.106385124
+juruch'ej,count,spine,,count,columna vertebral,,f,count,body_part,FALSE,,940.4448517,0.346907939
+sa',count,stomach,,count,estómago,,m,count,body_part,FALSE,,884.4365191,0.326247785
+ru'uj aq',count,tongue,,count,lengua,,f,count,body_part,FALSE,,1905.460718,0.702879546
+b'o,count,vagina,,count,vagina,,f,count,body_part,FALSE,,352.1005202,0.129881583
+xala'rit,count,waist,,count,cintura,,f,count,body_part,FALSE,,436.5158322,0.161020402
+polem,count,abandoned house,,count,casa abandonada,,f,count,building,FALSE,,7025.32899,2.591478274
+papa'ax,count,hut,,count,cabaña,,f,count,building,FALSE,a bamboo hut,363.0780548,0.133930936
+kachuuch',count,baseball cap,,count,gorra,,f,count,clothing,FALSE,,1063.326572,0.392236109
+t'uy,count,beanie,,count,gorro,,m,count,clothing,FALSE,knit cap,243.5940447,0.089856101
+kaxpo'ot,count,blouse,,count,blusa,,f,count,clothing,FALSE,blouse (non-traditional),225.5970069,0.083217418
+po'ot,count,blouse,,count,blusa,,f,count,clothing,FALSE,blouse (traditional),225.5970069,0.083217418
+punit,count,hat,,count,sombrero,,m,count,clothing,FALSE,,1047.128548,0.38626104
+wex,count,pants,,plural,pantalones,,m,plural,clothing,FALSE,,969.7653591,0.357723583
+xb'atalal ja'aj,count,scarf,,count,bufanda,,f,count,clothing,FALSE,,284.0098048,0.104764523
+kamiis,count,shirt,,count,camisa,,f,count,clothing,TRUE,,1220.862254,0.450347309
+k'ixt'ikr,count,sweater,,count,suéter,,m,count,clothing,FALSE,knitted garment,331.1311215,0.122146466
+chakach,count,basket,,count,canasta,,f,count,container,FALSE,,516.8128856,0.190640092
+su,count,beverage jug,,count,tecomate,,m,count,container,FALSE,,288.4031503,0.106385124
+meet,count,bottle,,count,botella,,f,count,container,FALSE,,1113.439609,0.410721627
+k'ux,count,ear of corn,,count,mazorca,,f,count,corn,FALSE,ear of corn,898.117861,0.33129451
+ajom,count,desire,,count,deseo,,m,count,emotion,FALSE,,1876.434172,0.692172338
+kaq ch'ool,mass,envy,,mass,envidia,,f,mass,emotion,FALSE,,516.8128856,0.190640092
+kaq ch'ool,plural,jealousy,,plural,celos,,m,plural,emotion,FALSE,,516.8128856,0.190640092
+yo ru,mass,rage,,mass,furia,,f,mass,emotion,FALSE,,549.5408739,0.202712675
+yo ru,mass,rage,,mass,rabia,,f,mass,emotion,FALSE,,549.5408739,0.202712675
+k'ab'el,mass,bean soup,,mass,sopa de frijoles,,f,mass,food,FALSE,,584.3414134,0.215549774
+xut',count,bean tamale,,count,tamalito de frijol,,m,count,food,FALSE,,450.1252062,0.166040579
+taxanx,mass,beef jerky,,mass,carne seca,,f,mass,food,FALSE,,1659.586907,0.612182493
+kaxlan wa,count,bread,,count,pan,,m,count,food,FALSE,,1634.305843,0.602856904
+kaxlan iswa,count,cake,,count,pastel,,m,count,food,FALSE,,1047.128548,0.38626104
+kakaw,mass,chocolate,,mass,chocolate,,m,mass,food,FALSE,,984.7666521,0.363257207
+poch,count,corn tamele,,count,tamalito de masa,,m,count,food,FALSE,,1220.862254,0.450347309
+mol,count,egg,,count,huevo,,m,count,food,FALSE,,0,0
+xtib'el kar,mass,fish,,mass,pescado,,m,mass,food,FALSE,Fish as food,1847.849797,0.681628236
+xel,count,leftovers,,plural,sobras,,f,plural,food,FALSE,,190.5460718,0.070287955
+xtib'el aaq,mass,pork,,mass,carne del cerdo,,m,mass,food,FALSE,,1659.586907,0.612182493
+is,count,potato,,count,papa,,f,count,food,FALSE,,1609.409893,0.593673375
+xtib'el kaxlan,mass,poultry,,mass,pollo,,m,mass,food,FALSE,,831.7637711,0.30681805
+iswa,count,sweet tamale,,count,tamal dulce,,m,count,food,FALSE,,1876.434172,0.692172338
+jax,count,sweetbreads,,plural,mollejas,,f,plural,food,FALSE,,32.11194909,0.011845341
+wa,count,tortilla,,count,tortilla,,f,count,food,FALSE,,255.0742784,0.094090889
+k'orech,count,tostada,,count,tostada,,f,count,food,FALSE,,156.0749963,0.057572387
+xtib'el ak'ach,count,turkey meat,,mass,pavo,,m,mass,food,FALSE,,1220.862254,0.450347309
+kaq ik,mass,turkey soup,,mass,caldo de chompipe,,m,mass,food,FALSE,,1096.478196,0.404464962
+tul,count,banana,,count,plátano,,m,count,fruit,FALSE,,464.1588834,0.171217272
+pata,count,guanaba fruit,,count,fruta de guanába,,f,count,fruit,FALSE,,1113.439609,0.410721627
+chiin,count,orange,,count,naranja,,f,count,fruit,FALSE,,1202.264435,0.443487012
+ch' op,count,pineapple,,count,piña,,f,count,fruit,FALSE,,368.6945065,0.136002713
+token,count,wild berries,,plural,moras,,f,plural,fruit,FALSE,,1584.893192,0.584629742
+ch'aat,count,bed,,count,cama,,f,count,furniture,FALSE,"From: S. Steward, Q'eqchi' Grammar",2398.832919,0.884872922
+arinil,count,countryman,,count,paisano,,m,count,human,FALSE,,176.4682857,0.065094991
+mu'us,count,foreigner,,count,extranjero,extranjera,m,count,human,FALSE,,1318.256739,0.486273839
+aj q'axol ch'och',count,immigrant,,count,immigrante,,m,count,human,FALSE,,493.5524741,0.182059874
+junatal,count,lonely person,,count,persona solitaria,,f,count,human,FALSE,,681.2920691,0.251312586
+xa'an,count,old lady,,count,vieja,,f,count,human,FALSE,,6812.920691,2.513125859
+aj sik'ol kolb'a'ib',count,refugee,,count,refugiado,refugiada,m,count,human,FALSE,,450.1252062,0.166040579
+tupus roq,count,short person,,count,persona baja,,f,count,human,FALSE,,3575.471605,1.318907199
+amaq' tenamit,plural,town-folk,,plural,los del pueblo,,m,plural,human,FALSE,,4713.389536,1.738658303
+tixil chajom,count,young man,,count,muchacho,,m,count,human,FALSE,,7585.77575,2.798213874
+sank,count,ant,,count,hormiga,,f,count,insect,FALSE,,374.397839,0.138106538
+pompori,count,butterfly,,count,mariposa,,f,count,insect,FALSE,a white butterfly,416.8693835,0.15377329
+peepem,count,butterfly,,count,mariposa,,f,count,insect,FALSE,,416.8693835,0.15377329
+motzo',count,caterpillar,,count,oruga,,f,count,insect,FALSE,"From: S. Steward, Q'eqchi' Grammar",179.1980722,0.066101945
+patal,count,centipede,,count,ciempiés,,m,count,insect,FALSE,,72.44359601,0.026722735
+paachach,count,cockroach,,count,cucaracha,,f,count,insect,FALSE,,176.4682857,0.065094991
+tululux,count,dragonfly,,count,caballito del diablo,,m,count,insect,FALSE,,884.4365191,0.326247785
+tulux,count,dragonfly,,count,caballito del diablo,,m,count,insect,FALSE,,884.4365191,0.326247785
+konk,count,fly,,count,mosca,,f,count,insect,FALSE,a biting fly,1467.799268,0.541436553
+aj sak,count,grasshopper,,count,saltamontes,,m,count,insect,FALSE,,104.7128548,0.038626104
+chili',count,grasshopper,,count,saltamontes,,m,count,insect,FALSE,,104.7128548,0.038626104
+ch'ub',count,honey bee,,count,abeja,,f,count,insect,FALSE,,819.0932242,0.302144184
+honon,count,hornet,,count,avispa,,f,count,insect,FALSE,,125.8925412,0.046438791
+utz,count,mosquito,,count,mosquito,,m,count,insect,FALSE,,255.0742784,0.094090889
+k'ams,count,termite,,count,termita,,f,count,insect,FALSE,,71.34003751,0.026315658
+ikan na',count,aunt,,count,tía,,f,count,kinship,FALSE,,794.3282347,0.293008963
+as,count,brother,,count,hermano,,m,count,kinship,FALSE,,2550.742784,0.940908891
+b'alk,count,brother-in-law,,count,cuñado,,m,count,kinship,FALSE,,1995.262315,0.736005239
+yuwa,count,father,,count,padre,,m,count,kinship,FALSE,,3743.97839,1.381065381
+iiman,count,granddaughter,,count,nieta,,f,count,kinship,FALSE,,275.4228703,0.101597005
+mama',count,grandfather,,count,abuelo,,m,count,kinship,FALSE,,984.7666521,0.363257207
+ixa'an,count,grandmother,,count,abuela,,f,count,kinship,FALSE,,1183.949922,0.43673122
+imam,count,grandson,,count,nieto,,m,count,kinship,FALSE,,819.0932242,0.302144184
+iiman,count,grandson,,count,nieto,,m,count,kinship,FALSE,,275.4228703,0.101597005
+xikin mama',count,great-grandfather,,count,bisabuelo,,m,count,kinship,FALSE,,660.693448,0.24371424
+xikin xa'an,count,great-grandmother,,count,bisabuela,,f,count,kinship,FALSE,,566.6740606,0.209032704
+xikin i,count,great-grandson,,count,bisnieto,,m,count,kinship,FALSE,,368.6945065,0.136002713
+b'eelom,count,husband,,count,esposo,,m,count,kinship,FALSE,,2154.43469,0.794720176
+na',count,mother,,count,madre,,f,count,kinship,FALSE,,4298.662347,1.585675218
+ikaq',count,nephew,,count,sobrino,,m,count,kinship,FALSE,,541.1695265,0.199624683
+ikaq',count,niece,,count,sobrina,,f,count,kinship,FALSE,,541.1695265,0.199624683
+anab',count,sister,,count,hermana,,f,count,kinship,FALSE,,1995.262315,0.736005239
+ixnam,count,sister-in-law,,count,cuñada,,f,count,kinship,FALSE,,1659.586907,0.612182493
+hi',count,son-in-law,,count,yerno,,m,count,kinship,FALSE,,2362.290663,0.871393345
+jii',count,son-in-law,,count,yerno,,m,count,kinship,FALSE,,2362.290663,0.871393345
+ikan,count,uncle,,count,tío,,m,count,kinship,FALSE,,1148.153621,0.423526808
+ixaqil,count,wife,,count,esposa,,f,count,kinship,FALSE,,3066.667331,1.131221296
+aj ajlanel,count,accountant,,count,contador,contadora,m,count,occupation,FALSE,,443.2682923,0.163511225
+aj yoob'ahom kab'l,count,architect,,count,arquitecto,arquitecta,m,count,occupation,FALSE,,524.8074602,0.193589102
+aj yoob'anel,count,artist,,count,artista,,m,count,occupation,FALSE,,1584.893192,0.584629742
+aj nawol chaq'rab',count,attorney,,count,abogado,abogada,m,count,occupation,FALSE,,1513.561248,0.558317069
+aj b'esol ismal,count,barber,,count,peluquero,peluquera,m,count,occupation,FALSE,,346.7368505,0.127903051
+aj ka'y tib',count,butcher,,count,carnicero,carnicera,m,count,occupation,FALSE,,316.227766,0.116648969
+aj iiqanel,count,cargo loader,,count,camaronero,camaronera,m,count,occupation,FALSE,,621.3457517,0.229199802
+aj pech'ol che',count,carpenter,,count,carpintero,carpintera,m,count,occupation,FALSE,,346.7368505,0.127903051
+aj k'uub'ahom tzakahemq,count,chef,,count,chef,,m,count,occupation,FALSE,,660.693448,0.24371424
+aj yiib'ahom xab',count,cobbler,,count,zapatero,zapatera,m,count,occupation,FALSE,,331.1311215,0.122146466
+aj yiib'ahom ululch'iich',count,computer technician,,count,técnico de computadoras,técnica de computadoras,m,count,occupation,FALSE,,2057.469156,0.758951876
+aj k'uub'anel,count,cook,,count,cocinero,cocinera,m,count,occupation,FALSE,,1258.925412,0.464387911
+aj tz'iib'anel,count,court reporter,,count,escribano,escribana,m,count,occupation,FALSE,,4042.654874,1.491240096
+aj yiib'ahom ruch e'ej,count,dentist,,count,dentista,,m,count,occupation,FALSE,,374.397839,0.138106538
+aj b'anonel,count,doctor,,count,doctor,doctora,m,count,occupation,FALSE,,1876.434172,0.692172338
+aj chajinel ab'ix,count,field hand,,count,peón de campo,trabajadora del campo,m,count,occupation,FALSE,,4042.654874,1.491240096
+aj chupul xam,count,firefighter,,count,bombero,bombera,m,count,occupation,FALSE,,179.1980722,0.066101945
+aj chapol kar,count,fisher,,count,pescador,pescadora,m,count,occupation,FALSE,,478.6300923,0.17655536
+aj raqol aatin,count,judge,,count,juez,jueza,m,count,occupation,FALSE,,1995.262315,0.736005239
+aj t'anol che',count,logger,,count,leñador,leñadora,m,count,occupation,FALSE,,70.2532899,0.025914783
+aj yiib'ahom ch'iich',count,mechanic,,count,mecánico,mecánica,m,count,occupation,FALSE,,443.2682923,0.163511225
+aj xokonel,count,midwife,,count,partera,partera,f,count,occupation,FALSE,,151.3561248,0.055831707
+aj ch'e'ol so'sol ch'iich',count,pilot,,count,piloto,,m,count,occupation,FALSE,airline pilot,1031.177275,0.380376991
+aj k'aak'aalehom tenamit,count,police officer,,count,policía,,m,count,occupation,FALSE,,3575.471605,1.318907199
+aj ilol tzukxul,count,shepherd,,count,pastor,pastora,m,count,occupation,FALSE,,724.4359601,0.26722735
+aj b'atz'uhom b'olotz oq,count,soccer player,,count,pelotero,pelotera,m,count,occupation,FALSE,,2884.031503,1.063851244
+aj jalol tz'iib',count,translator,,count,traductor,traductora,m,count,occupation,FALSE,,429.8662347,0.158567522
+aj q'axtesihom tzazkaemk,count,waiter,waitress,count,mesero,mesera,m,count,occupation,FALSE,restaurant server,255.0742784,0.094090889
+k'atk'al,count,big cornfield,,count,milpa grande,,f,count,place,FALSE,,6025.595861,2.222700287
+k'al,count,cornfield,,count,milpa,,f,count,place,FALSE,,61.18805758,0.022570832
+chaqi ch'och',count,desert,,count,desierto,,m,count,place,FALSE,,857.6958986,0.316383801
+wa'leb'aal,count,dining room,,count,comedor de casa,,m,count,place,FALSE,,7025.32899,2.591478274
+k'an ha,count,swamp,,count,pantano,,m,count,place,FALSE,,363.0780548,0.133930936
+ik'e,count,agave plant,,count,maguey,,m,count,plant,FALSE,,1819.700859,0.671244756
+simb',mass,bamboo,,mass,bambú,,m,mass,plant,FALSE,,271.2272579,0.100049342
+inup,count,ceiba tree,,count,ceiba,,f,count,plant,FALSE,"From: S. Steward, Q'eqchi' Grammar",1711.328304,0.631268675
+ixam,mass,corn,,mass,maíz,,m,mass,plant,FALSE,,640.7176189,0.236345628
+uutz'u'uj,count,flower,,count,flor,,f,count,plant,FALSE,,954.992586,0.352274255
+pach'aya',mass,grass,,mass,grama,,f,mass,plant,FALSE,,831.7637711,0.30681805
+k'uxb',mass,moss,,mass,musgo,,m,mass,plant,FALSE,,392.0426655,0.144615299
+ji,count,oak,,count,roble,,m,count,plant,FALSE,,611.8805758,0.225708322
+chaj,count,pine tree,,count,pino,,m,count,plant,FALSE,,1711.328304,0.631268675
+warak'ix,count,sleepy plant,,count,dormilona,,f,count,plant,FALSE,"mimosa pudica, touch-me-not, shameplant",1819.700859,0.671244756
+che',count,tree,,count,árbol,,m,count,plant,FALSE,,1711.328304,0.631268675
+k'ila pim,mass,vegetation,,mass,vegetación,,f,count,plant,FALSE,,374.397839,0.138106538
+pim,mass,weeds,,plural,hierbas,,f,count,plant,FALSE,,346.7368505,0.127903051
+tz'in,count,yucca,,count,yuca,,f,count,plant,FALSE,,208.9296131,0.07706921
+ab'oon,mass,fertilizer,,mass,fertilizante,,m,mass,substance,TRUE,Loanword; preconsonantal Set A even if vowel-initial.,190.5460718,0.070287955
+maal,count,axe,,count,hacha,,f,count,tool,FALSE,,336.2533863,0.124035949
+luchb'ak,count,fish hook,,count,anzuelo,,m,count,tool,FALSE,,1847.849797,0.681628236
+ch'antun,count,fishnet,,count,red,,m,count,tool,FALSE,,2511.886432,0.926575698
+t'ajleb',count,hammer,,count,martillo,,m,count,tool,FALSE,,593.3805863,0.218884112
+xer,count,saw,,count,sierra,,f,count,tool,FALSE,,3630.780548,1.339309365
+ka' lach,plural,scissors,,plural,pequeñas,,f,plural,tool,FALSE,small scissors,1401.737418,0.517067894
+lokoch,count,stick,,count,palo,,m,count,tool,FALSE,stick used to aid in clearing weeds,1490.504643,0.549812031
+yax,count,tweezers,,plural,pinzas,,f,plural,tool,FALSE,,212.1615437,0.078261393
+b'aqlaq ch'iich',count,bicycle,,count,bicicleta,,f,count,vehicle,FALSE,,747.0218989,0.275558771
+tz'amb'a,count,beam,,count,viga,,f,count,wood,FALSE,wooden beam,575.4399373,0.212266229
+si',mass,firewood,,mass,leña,,f,mass,wood,FALSE,,0,0
+tz'amb'a,count,rafter,,count,caballete,,m,count,wood,FALSE,wooden rafter,575.4399373,0.212266229

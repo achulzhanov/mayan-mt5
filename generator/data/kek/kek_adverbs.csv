@@ -1,0 +1,52 @@
+﻿lemma_kek,gloss_en,gloss_es,category,class_any_of,class_none_of,tense_compat,rel_days,p_weight,p_debug_percent
+b’itz’,a little bit,un poquito,amount,v_consumption,,,,562341.3252,1.654306145
+tz’aqob’,completely,completamente,amount,v_consumption,,,,100000,0.294181856
+jun xikik,all together,todos juntos,group,v_social,,,,288403.1503,0.848429739
+ka’ib’al,both,ambos,group,v_social,,,,616595.0019,1.813910618
+ka’ichal,both,ambos,group,v_social,,,,616595.0019,1.813910618
+ka’b’ichal,both,ambos,group,v_social,,,,616595.0019,1.813910618
+tik’to,together,juntos,group,v_social,,,,288403.1503,0.848429739
+arin,here,aquí,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,933254.3008,2.74546482
+sa' li warib'aal,in the bedroom,en a recámara,location,v_sleep,,,,28840.31503,0.084842974
+sa' li nimla tenamit,in the city,en la ciudad,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,501187.2336,1.474401904
+sa' li' k'al,in the cornfield,en la milpa,location,v_action;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,478.6300923,0.001408043
+sa' li wa'leb'aal,in the dining room,en el comedor,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,v_sleep,,,245470.8916,0.722130824
+sa' li ch'och,in the field,en el campo,location,v_action;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,173780.0829,0.511229473
+sa' li k'iche',in the forest,en el bosque,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,50118.72336,0.14744019
+sa' li k'uub'leb'aal,in the kitchen,en la cocina,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,v_sleep,,,51286.1384,0.150874514
+sa' li nimla k'iche',in the  rainforest,en la selva,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,17782.7941,0.052313754
+sa' li k'aleb'aal,in the village,en el pueblo,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,323593.6569,0.951953825
+r-ix kab’l,outside the house,afuera de la casa,location,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,588843.6554,1.732271192
+chancho,silently,en silencio,manner,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_ritual;v_sleep,,,,77624.71166,0.228357817
+chaab'il,well,bien,manner,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,1288249.552,3.789796436
+us,well,bien,manner,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,1288249.552,3.789796436
+sa' aanil,quickly,rápidamente,speed,v_motion,,,,100000,0.294181856
+tikto,rapidly,rápidamente,speed,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,46773.51413,0.137599192
+chi x- b’een li ninq’e,after the fiesta,después de la fiesta,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,1288249.552,3.789796436
+chi r-ix li ninq’e ,after the fiesta,después de la fiesta,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,1288249.552,3.789796436
+sa' q'oqyin,at night,en la noche,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional;v_sleep,,,,407380.2778,1.198438861
+chi r-ub’el li ninq’e,before the fiesta,antes de la fiesta,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,851138.0382,2.503893675
+chi  r-u li ninq’e,during the fiesta,durante la fiesta,time,v_social,,,,630957.3445,1.856162024
+mixk,earlier,antes,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,pst,,660693.448,1.943640245
+oxej,in three days,en tres días,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,3,602559.5861,1.772620972
+jun po,last month,el mes pasado,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,pst,,724435.9601,2.13115915
+junab'er,last year,el año pasado,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,pst,,912010.8394,2.682970411
+mook'on,later,más tarde,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,309029.5433,0.909108845
+jo'wan,later today,más tarde hoy,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,0,549540.8739,1.61664954
+sa'jun chik po,next month,el próximo mes,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,501187.2336,1.474401904
+sa' jun xaman,next week,la próxima semana,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,501187.2336,1.474401904
+sa jun chiab',next year,el próximo año,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,912010.8394,2.682970411
+anajwank,now,ahora,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,prs,0,1513561.248,4.452622567
+ak’ee,right away,de inmediato,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,0,912010.8394,2.682970411
+kab'ej,in two days,en dos días,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,2,1318256.739,3.878072135
+sa' jun kutan,some day in the future,algún día en el futuro,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,912010.8394,2.682970411
+ee'ku,this afternoon,hoy en la tarde,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,fut,,549540.8739,1.61664954
+sa po' anajwan,this month,este mes,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,prs,,2344228.815,6.896295829
+sa' xaman awe,this week,esta semana,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,,2290867.653,6.739316971
+sa' chiab',this year,este año,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,,prs | fut,,2344228.815,6.896295829
+oxejer,three days ago,hace tres días,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,pst,-3,1071519.305,3.152215376
+anaqwan,today,hoy,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,prs | fut,0,549540.8739,1.61664954
+hulaj,tomorrow,mañana,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,1,301995.172,0.888415001
+ch'ek'ek',tonight,hoy en la noche,time,v_communicative;v_commerce;v_creation;v_motion;v_ritual;v_social;v_volitional,v_involuntary,fut,0,549540.8739,1.61664954
+prim,very early,muy temprano,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,,,269153.4804,0.791800703
+ewer,yesterday,ayer,time,v_action;v_commerce;v_communicative;v_consumption;v_creation;v_motion;v_volitional,,pst,-1,123026.8771,0.36192275

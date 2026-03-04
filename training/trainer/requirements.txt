@@ -1,0 +1,10 @@
+transformers
+datasets
+torch
+google-cloud-storage
+sacrebleu
+sentencepiece
+numpy
+pyarrow
+gcsfs
+accelerate>=0.26.0
