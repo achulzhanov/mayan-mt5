@@ -10,8 +10,8 @@ This repository contains the data generation and training pipeline for fine-tuni
 
 ## Hugging Face Assets
 The resulting artifacts from this pipeline (datasets and adapter weights) are hosted separately on Hugging Face:
-* **Model Checkpoint (22000):** *Coming soon*
-* **Training Datasets:** *Coming soon*
+* **Model Checkpoint (22000):** [https://huggingface.co/achulz/mayan-mt5-qeqchi-adapter](https://huggingface.co/achulz/mayan-mt5-qeqchi-adapter)
+* **Training Datasets:** [https://huggingface.co/datasets/achulz/mayan-mt5-qeqchi-dataset](https://huggingface.co/datasets/achulz/mayan-mt5-qeqchi-dataset)
 
 *(Note: The `mT5_train_v4.jsonl` and validation sets are omitted from this GitHub repository due to file size constraints and are managed entirely via the Hugging Face `datasets` library).*
 
