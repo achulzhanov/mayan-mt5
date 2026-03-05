@@ -32,7 +32,7 @@ Additional tools are available in `generator/tools/` and `/training/utils/`. Thi
 Clone the repository and set up your virtual environment:
 
 ```bash
-git clone [https://github.com/achulzhanov/mayan-mt5.git](https://github.com/achulzhanov/mayan-mt5.git)
+git clone https://github.com/achulzhanov/mayan-mt5.git
 cd mayan-mt5
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
