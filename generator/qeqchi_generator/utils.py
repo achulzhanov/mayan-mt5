@@ -107,7 +107,9 @@ def cleanup_qeqchi_surface(text: str) -> str:
 
     Specifically:
     - removes dangling hyphens at word boundaries (e.g. 'winaq-' -> 'winaq')
-    - collapses accidental double hyphens
+    - collapses accidental double hyphens and double spaces
+    - removes stray lexical reflexive markers before a reflexive pronoun
+      (e.g. 'ib’ rib’', "ib' rib’", "'ib rib’" -> 'rib’')
     """
     if not text:
         return text
@@ -117,6 +119,19 @@ def cleanup_qeqchi_surface(text: str) -> str:
 
     # Collapse any accidental multiple hyphens
     text = re.sub(r"--+", "-", text)
+
+    # Defensive reflexive cleanup:
+    # remove leftover lexical reflexive markers if immediately followed
+    # by the real reflexive pronoun
+    text = re.sub(
+        r"\b(?:ib[’']|[’']ib)\s+(wib[’']|aawib[’']|rib[’']|qib[’']|eerib[’']|rib[’']eb)\b",
+        r"\1",
+        text,
+        flags=re.IGNORECASE
+    )
+
+    # Normalize spacing
+    text = re.sub(r"\s{2,}", " ", text).strip()
 
     return text
 
@@ -178,9 +193,99 @@ def save_as_jsonl(rows: List[Dict[str, str]], base_file_path: str, mode: str = '
             line2 = {"translation": {"src_lang_code": spa_code, "tgt_lang_code": kek_code, "src_text": spa_text, "tgt_text": kek_text, "type": "synthetic"}}
             f_es.write(json.dumps(line2, ensure_ascii=False) + '\n')
 
-    # Only print confirmation if we are in write mode or it's the first batch, 
+    # Only print confirmation if we are in write mode or it's the first batch,
     # otherwise it might spam the console during 40+ batches.
     if mode == 'w':
         print(f"\nSuccessfully saved JSONL files to:")
+        print(f"- {en_path}")
+        print(f"- {es_path}")
+
+
+def save_as_jsonl_mtl(rows: List[Dict], base_file_path: str, mode: str = 'w'):
+    """
+    Saves MTL-annotated sentence pairs to two mirrored JSONL files.
+
+    Each JSONL line uses the extended schema:
+        {"translation": {
+            "src_lang_code": "...", "tgt_lang_code": "...",
+            "src_text": "...", "tgt_text": "...",
+            "pos_kek": "Word (TAG) ...",
+            "semantic_kek": "Word (B-CLASS) ..."
+        }}
+
+    Outputs:
+        {base_file_path}_kek_en_mtl.jsonl  — KEK↔EN pairs
+        {base_file_path}_kek_es_mtl.jsonl  — KEK↔ES pairs
+
+    The pos_kek / semantic_kek fields describe the Q'eqchi' side regardless
+    of translation direction, enabling the model to learn both tasks in one pass.
+
+    Args:
+        rows:            List of dicts with keys 'kek', 'en', 'es',
+                         'pos_kek', 'semantic_kek'.
+        base_file_path:  Base path without extension suffix.
+        mode:            'w' for overwrite (default), 'a' for append.
+    """
+    kek_code = "kek_Latn"
+    eng_code = "eng_Latn"
+    spa_code = "spa_Latn"
+
+    en_path = f"{base_file_path}_kek_en_mtl.jsonl"
+    es_path = f"{base_file_path}_kek_es_mtl.jsonl"
+
+    with open(en_path, mode, encoding='utf-8') as f_en:
+        for row in rows:
+            kek_text = row.get("kek", "")
+            eng_text = row.get("en", "")
+            pos_kek  = row.get("pos_kek", "")
+            sem_kek  = row.get("semantic_kek", "")
+
+            if not kek_text or not eng_text:
+                continue
+
+            # KEK → ENG
+            line1 = {"translation": {
+                "src_lang_code": kek_code, "tgt_lang_code": eng_code,
+                "src_text": kek_text, "tgt_text": eng_text,
+                "pos_kek": pos_kek, "semantic_kek": sem_kek,
+            }}
+            f_en.write(json.dumps(line1, ensure_ascii=False) + '\n')
+
+            # ENG → KEK
+            line2 = {"translation": {
+                "src_lang_code": eng_code, "tgt_lang_code": kek_code,
+                "src_text": eng_text, "tgt_text": kek_text,
+                "pos_kek": pos_kek, "semantic_kek": sem_kek,
+            }}
+            f_en.write(json.dumps(line2, ensure_ascii=False) + '\n')
+
+    with open(es_path, mode, encoding='utf-8') as f_es:
+        for row in rows:
+            kek_text = row.get("kek", "")
+            spa_text = row.get("es", "")
+            pos_kek  = row.get("pos_kek", "")
+            sem_kek  = row.get("semantic_kek", "")
+
+            if not kek_text or not spa_text:
+                continue
+
+            # KEK → SPA
+            line1 = {"translation": {
+                "src_lang_code": kek_code, "tgt_lang_code": spa_code,
+                "src_text": kek_text, "tgt_text": spa_text,
+                "pos_kek": pos_kek, "semantic_kek": sem_kek,
+            }}
+            f_es.write(json.dumps(line1, ensure_ascii=False) + '\n')
+
+            # SPA → KEK
+            line2 = {"translation": {
+                "src_lang_code": spa_code, "tgt_lang_code": kek_code,
+                "src_text": spa_text, "tgt_text": kek_text,
+                "pos_kek": pos_kek, "semantic_kek": sem_kek,
+            }}
+            f_es.write(json.dumps(line2, ensure_ascii=False) + '\n')
+
+    if mode == 'w':
+        print(f"\nSuccessfully saved MTL JSONL files to:")
         print(f"- {en_path}")
         print(f"- {es_path}")

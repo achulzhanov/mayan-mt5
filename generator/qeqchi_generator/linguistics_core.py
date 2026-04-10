@@ -138,20 +138,6 @@ def norm_transitivity_set(s: str) -> set[str]:
     valid = {"intr", "tr", "ditr"}
     return {t for t in (utils._s(x) for x in toks) if t in valid}
 
-def enrich_noun_semantics(df):
-    """
-    Enrich noun semantics + normalize key categorical fields.
-    """
-    if df is None or df.empty:
-        return df
-
-    # Normalize 'class' and a few booleans up front to make downstream matching robust
-    if "class" in df.columns:
-        df["class"] = df["class"].astype(str).str.strip().str.lower()
-
-    def _is(cls):
-        return utils._s(cls)
-
 def derive_possessability_from_class(noun_class: str) -> str:
     """Return 'obligatory', 'non-possessable', or 'optional' based on noun class."""
     cls = utils._s(noun_class)

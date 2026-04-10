@@ -901,3 +901,36 @@ def embed_adj_into_np_in_template_es(tmpl: str, repl: Dict[str, str]) -> tuple[s
         out = out.replace(m.group(0), "{" + synth_key + "}", 1)
 
     return out, repl
+
+def clean_spanish_surface(text: str) -> str:
+    """
+    Post-process Spanish sentence surface forms.
+
+    Fixes:
+    - Contractions: "a el" → "al", "de el" → "del"
+    - Duplicate determiners/pronouns
+    - Extra whitespace
+    """
+
+    if not text:
+        return text
+
+    t = text.strip()
+
+    # --- 1. Normalize whitespace ---
+    t = re.sub(r"\s+", " ", t)
+
+    # --- 2. Contractions ---
+    # a + el → al
+    t = re.sub(r"\ba el\b", "al", t, flags=re.IGNORECASE)
+
+    # de + el → del
+    t = re.sub(r"\bde el\b", "del", t, flags=re.IGNORECASE)
+
+    # --- 3. Remove duplicate determiners ---
+    t = re.sub(r"\b(el|la|los|las|un|una|unos|unas) \1\b", r"\1", t, flags=re.IGNORECASE)
+
+    # --- 4. Remove duplicate reflexives ---
+    t = re.sub(r"\b(se) \1\b", r"\1", t, flags=re.IGNORECASE)
+
+    return t

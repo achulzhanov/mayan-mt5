@@ -43,7 +43,7 @@ _NONPOSSESSED_EXCEPTIONS = {
 # Verb affixes
 # Conjugation by person
 SET_A_PRECON = {"1sg":"in","2sg":"aa","3sg":"x","1pl":"qa","2pl":"ee","3pl_prefix":"e'x","3pl_suffix":"eb’"}
-SET_A_PREVOW = {"1sg":"w","2sg":"aa","3sg":"r","1pl":"qa","2pl":"eer","3pl_prefix":"e'r","3pl_suffix":"eb’"}
+SET_A_PREVOW = {"1sg":"w","2sg":"aa","3sg":"r","1pl":"q","2pl":"eer","3pl_prefix":"e'r","3pl_suffix":"eb’"}
 SET_B = {"1sg":"in","2sg":"at","3sg":"","1pl":"oo","2pl":"ex","3pl":"e'"}
 # Tense marker: present tense
 INTR_PRES_PREFIX = {"1sg": "nakin","2sg": "nakat","3sg": "na","1pl": "nako","2pl": "nakex","3pl": "nake'"}
@@ -528,11 +528,19 @@ def kek_conjugate(base_kek: str, noun_class: str, person: str, transitivity: str
 
 def _k_to_q_future(stem: str) -> str:
     """
-    Q'eqchi' future alternation: final -k/-nk realised with 'q'.
+    Q'eqchi' future alternation: final -k/-nk realised with 'q',
+    EXCEPT for irregular xik 'to go', which keeps final -k:
+        tinxik, tatxik, taaxik, tooxik, texik, te'xik
+
     This is applied *after* stem derivation.
     """
     s = (stem or "").strip()
     if not s:
+        return s
+
+    # Irregular verb: xik 'to go' keeps final -k in the future.
+    # Be conservative and only special-case the bare lexical form.
+    if s == "xik":
         return s
 
     if s.endswith("nk"):
@@ -696,101 +704,227 @@ def render_verb_bundle_kek(
     obj_person: str | None = None,
     env: dict | None = None
 ) -> Dict[str, str]:
+
     if not vrow:
         return {}
 
-    # Explicit split between stem and infinitive from the verbs CSV
-    stem = (vrow.get("lemma_kek") or "").strip()         # verb stem (finite base for tr/ditr)
+    # Extract fields from verbs CSV
+    stem = (vrow.get("lemma_kek") or "").strip()
     vclass = (vrow.get("class") or "").strip()
-    infinitive = (vrow.get("gloss_kek") or "").strip()   # citation/infinitive form (finite base for intr)
+    infinitive = (vrow.get("gloss_kek") or "").strip()
 
     trans = (transitivity or "").strip().lower()
 
-    # Choose the base that feeds finite morphology:
-    # - intr: conjugate from citation/infinitive form in `gloss_kek` (Stewart-style nak-/na- + Set B)
-    # - tr/ditr: conjugate from lemma_kek as before.
+    # Determine which base feeds finite morphology
     if trans == "intr":
         finite_base = infinitive if infinitive else stem
     else:
         finite_base = stem if stem else infinitive
 
-    # Reflexive if infinitive ends in `ib’` (or `ib'`)
+    # Detect reflexive verbs
     is_refl = kek_is_reflexive_infinitive(infinitive)
 
-    # Clean the stored infinitive for surface forms (progressive/imperative/etc.)
-    infinitive_core = kek_strip_reflexive_marker(infinitive) if is_refl else infinitive
-    
-    # Grammar: for reflexives, Set B on the verb must be 3sg/ø (patient = "self")
+    # Remove reflexive marker for morphology generation
+    infinitive_core = (
+        kek_strip_reflexive_marker(infinitive)
+        if is_refl else infinitive
+    )
+
+    # Reflexive verbs force Set B = 3sg (self)
     eff_obj_person = obj_person
-    if is_refl and (transitivity or "").strip().lower() in {"tr", "ditr"}:
+    if is_refl and trans in {"tr", "ditr"}:
         eff_obj_person = "3sg"
 
-    # Use environment overrides if present; otherwise fall back to module defaults
-    tam_pfv = (env.get("KEK_TAM_PFV") if (env and "KEK_TAM_PFV" in env) else KEK_TAM_PFV_DEFAULT)
+    # TAM configuration
+    tam_pfv = (
+        env.get("KEK_TAM_PFV")
+        if (env and "KEK_TAM_PFV" in env)
+        else KEK_TAM_PFV_DEFAULT
+    )
 
-    # Negation markers fall back to DEFAULT_PLACEHOLDERS
-    neg_pre = (env.get("NEG_PRE") if env and "NEG_PRE" in env else DEFAULT_PLACEHOLDERS["NEG_PRE"])
-    neg_suf = (env.get("NEG_SUF") if env and "NEG_SUF" in env else DEFAULT_PLACEHOLDERS["NEG_SUF"])
+    neg_pre = (
+        env.get("NEG_PRE")
+        if env and "NEG_PRE" in env
+        else DEFAULT_PLACEHOLDERS["NEG_PRE"]
+    )
+
+    neg_suf = (
+        env.get("NEG_SUF")
+        if env and "NEG_SUF" in env
+        else DEFAULT_PLACEHOLDERS["NEG_SUF"]
+    )
 
     out: Dict[str, str] = {}
 
-    # Finite forms (wrapped for reflexives)
-    v_pres = kek_conjugate(finite_base, vclass, person, transitivity, eff_obj_person, tam_prefix="")
-    v_pst  = kek_conjugate(finite_base, vclass, person, transitivity, eff_obj_person, tam_prefix=tam_pfv)
-    out[f"{key_prefix}_KEK"]     = _kek_attach_reflexive_suffix(v_pres, person, is_reflexive=is_refl)
-    out[f"{key_prefix}_PST_KEK"] = _kek_attach_reflexive_suffix(v_pst,  person, is_reflexive=is_refl)
+    # ------------------------------------------------
+    # PRESENT + PAST
+    # ------------------------------------------------
 
-    # Imperatives from the stem + stored infinitive (also wrapped)
+    v_pres = kek_conjugate(
+        finite_base,
+        vclass,
+        person,
+        transitivity,
+        eff_obj_person,
+        tam_prefix=""
+    )
+
+    v_pst = kek_conjugate(
+        finite_base,
+        vclass,
+        person,
+        transitivity,
+        eff_obj_person,
+        tam_prefix=tam_pfv
+    )
+
+    out[f"{key_prefix}_KEK"] = _kek_attach_reflexive_suffix(
+        v_pres, person, is_reflexive=is_refl
+    )
+
+    out[f"{key_prefix}_PST_KEK"] = _kek_attach_reflexive_suffix(
+        v_pst, person, is_reflexive=is_refl
+    )
+
+    # ------------------------------------------------
+    # IMPERATIVES
+    # ------------------------------------------------
+
     imp = kek_imperative(
         stem,
         person,
         transitivity,
         infinitive_kek=infinitive_core,
     )
-    out[f"{key_prefix}_IMP"]    = _kek_attach_reflexive_suffix(imp, person, is_reflexive=is_refl)
+
+    out[f"{key_prefix}_IMP"] = _kek_attach_reflexive_suffix(
+        imp, person, is_reflexive=is_refl
+    )
+
     out[f"{key_prefix}_IMP_PL"] = out[f"{key_prefix}_IMP"]
 
-    imp_p = (env.get("IMP_PERSON") if (env and "IMP_PERSON" in env) else person) or "2sg"
-    if (transitivity or "").strip().lower() in {"tr", "ditr"}:
+    imp_p = (
+        env.get("IMP_PERSON")
+        if (env and "IMP_PERSON" in env)
+        else person
+    ) or "2sg"
+
+    if trans in {"tr", "ditr"}:
+
         neg_imp = kek_imperative_negative_tr(
             stem,
             imp_p,
-            infinitive_kek=infinitive_core,
+            infinitive_kek=infinitive,
         )
+
     else:
+
         neg_imp = kek_imperative_negative(
             stem,
             imp_p,
-            infinitive_kek=infinitive_core,
+            infinitive_kek=infinitive,
         )
-    
-    out[f"{key_prefix}_IMP_NEG"]    = _kek_attach_reflexive_suffix(neg_imp, imp_p, is_reflexive=is_refl)
+
+    out[f"{key_prefix}_IMP_NEG"] = _kek_attach_reflexive_suffix(
+        neg_imp, imp_p, is_reflexive=is_refl
+    )
+
     out[f"{key_prefix}_IMP_NEG_PL"] = out[f"{key_prefix}_IMP_NEG"]
 
-    # Future from the stem (wrapped)
-    fut = kek_future_form(finite_base, vclass, person, transitivity)
-    out[f"{key_prefix}_FUT_KEK"] = _kek_attach_reflexive_suffix(fut, person, is_reflexive=is_refl)
-    out[f"{key_prefix}_FUT"]     = out[f"{key_prefix}_FUT_KEK"]
+    # ------------------------------------------------
+    # FUTURE
+    # ------------------------------------------------
 
-    # Progressive from the stored infinitive (wrapped)
-    prog = kek_progressive(infinitive_core, person, transitivity)
-    out[f"{key_prefix}_PROG_KEK"] = _kek_attach_reflexive_suffix(prog, person, is_reflexive=is_refl)
+    fut = kek_future_form(
+        finite_base,
+        vclass,
+        person,
+        transitivity
+    )
 
-    # Future progressive (same progressive stem, different auxiliary)
-    prog_fut = kek_progressive(infinitive_core, person, transitivity, aux_map=AUX_PROG_FUT)
-    out[f"{key_prefix}_FUT_PROG_KEK"] = _kek_attach_reflexive_suffix(prog_fut, person, is_reflexive=is_refl)
-    
-    # Non-specific passive (-man) for transitive verbs ---
-    # We treat the -man form as an intransitive neutral verb (vin-class).
-    # (Left unwrapped intentionally; reflexive semantics generally should not propagate to this derived passive.)
-    if (transitivity or "").strip().lower() in {"tr", "ditr"} and stem:
+    out[f"{key_prefix}_FUT_KEK"] = _kek_attach_reflexive_suffix(
+        fut, person, is_reflexive=is_refl
+    )
+
+    out[f"{key_prefix}_FUT"] = out[f"{key_prefix}_FUT_KEK"]
+
+    # ------------------------------------------------
+    # PROGRESSIVE
+    # ------------------------------------------------
+
+    prog = kek_progressive(
+        infinitive_core,
+        person,
+        transitivity
+    )
+
+    out[f"{key_prefix}_PROG_KEK"] = _kek_attach_reflexive_suffix(
+        prog, person, is_reflexive=is_refl
+    )
+
+    # FIX: restore generic alias used by templates
+    out[f"{key_prefix}_PROG"] = out[f"{key_prefix}_PROG_KEK"]
+
+    # ------------------------------------------------
+    # FUTURE PROGRESSIVE
+    # ------------------------------------------------
+
+    prog_fut = kek_progressive(
+        infinitive_core,
+        person,
+        transitivity,
+        aux_map=AUX_PROG_FUT
+    )
+
+    out[f"{key_prefix}_FUT_PROG_KEK"] = _kek_attach_reflexive_suffix(
+        prog_fut, person, is_reflexive=is_refl
+    )
+
+    # FIX: restore generic alias
+    out[f"{key_prefix}_FUT_PROG"] = out[f"{key_prefix}_FUT_PROG_KEK"]
+
+    # Back-compat alias (for templates using PROG_FUT)
+    out[f"{key_prefix}_PROG_FUT_KEK"] = out[f"{key_prefix}_FUT_PROG_KEK"]
+    out[f"{key_prefix}_PROG_FUT"] = out[f"{key_prefix}_FUT_PROG_KEK"]
+
+    # ------------------------------------------------
+    # PASSIVE (-man)
+    # ------------------------------------------------
+
+    if trans in {"tr", "ditr"} and stem:
+
         passive_stem = f"{stem}man"
-        out["V_TR_PASS"]      = kek_conjugate(passive_stem, vclass, person, "intr", None, tam_prefix="")
-        out["V_TR_PST_PASS"]  = kek_conjugate(passive_stem, vclass, person, "intr", None, tam_prefix=tam_pfv)
-        out["V_TR_FUT_PASS"]  = kek_future_form(passive_stem, vclass, person, "intr")
 
+        out["V_TR_PASS"] = kek_conjugate(
+            passive_stem,
+            vclass,
+            person,
+            "intr",
+            None,
+            tam_prefix=""
+        )
+
+        out["V_TR_PST_PASS"] = kek_conjugate(
+            passive_stem,
+            vclass,
+            person,
+            "intr",
+            None,
+            tam_prefix=tam_pfv
+        )
+
+        out["V_TR_FUT_PASS"] = kek_future_form(
+            passive_stem,
+            vclass,
+            person,
+            "intr"
+        )
+
+    # ------------------------------------------------
     # Convenience aliases
-    out[f"{key_prefix}"]     = out[f"{key_prefix}_KEK"]
+    # ------------------------------------------------
+
+    out[f"{key_prefix}"] = out[f"{key_prefix}_KEK"]
     out[f"{key_prefix}_PST"] = out[f"{key_prefix}_PST_KEK"]
 
     return out

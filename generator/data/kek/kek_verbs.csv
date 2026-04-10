@@ -1,158 +1,177 @@
-lemma_kek,gloss_kek,gloss_en,gloss_en_past,gloss_en_pp,gloss_es,gloss_es_past_3sg,gloss_es_pp,gloss_es_gerund,category,transitivity,agent_class_any_of,agent_class_none_of,theme_class_any_of,theme_class_none_of,goal_class_any_of,goal_none_of,notes,p_weight,p_debug_percent
-ayan,ayanak,agonize,,,agonizar,,,,v_emotive|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,30.199517204020175,0.012202647996961628
-b’ola,b’olank,agonize,,,agonizar,,,,v_emotive|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,30.199517204020175,0.012202647996961628
-sume,sumenk,answer,,,responder,,,,v_communicative,tr,human;kinship,,,,,,,2796.8338463090777,1.130110084274947
-patz',patz'ok,ask,,,preguntar,,,,v_communicative|v_social,tr,human;kinship;occupation,emotion,human;kinship,,,,,3630.780547701014,1.4670809694902374
-tz'aama,tz'aamank,ask,,,pedir,pidió,pedido,pidiendo,v_communicative|v_social,tr,human;kinship;occupation,emotion,human;kinship,,,,,3630.780547701014,1.4670809694902374
-atin,atink,bathe,,,bañarse,bañó,bañado,,v_hygiene|v_action,intr,human;kinship,emotion,,,,,,176.46828566194998,0.07130512577444077
-ch’ox,ch’oxok,beat,beat,beaten,golpear,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.8840037017136044
-ch’ukib’,ch’ukib’k,beat,beat,beaten,golpear,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.8840037017136044
-rap,rapok,beat,beat,beaten,golpear,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.8840037017136044
-tuul,tuulank,bewitch,,,embrujar,,,,v_ritual|v_action,tr,human;kinship,emotion,human;kinship,,,,,21.87761623949552,0.008840037017136045
-tiw,tiwok,bite,bit,bitten,morder,mordió,mordido,,v_action|v_conflict,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;kinship,,,,,747.0218989273312,0.30184738441509223
-woxq,woqxink,boil,,,hervir,hirvió,hervido,hirviendo,v_process|v_environmental|v_creation,tr,human;kinship,emotion,food;fruit;vegetable,,,,,357.5471604506213,0.14447324146994256
-kanasi ib’,kanasink ib’,brag,,,jactarse,,,,v_communicative|v_social|v_emotive,intr,human;kinship;occupation,emotion,,,,,,212.16154368926846,0.08572761672453157
-musqi',musiq'ak,breathe,,,respirar,,,,v_habitual|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,691.8309709189363,0.2795465157435083
-tz'akab',tz'akab'k,build,built,built,construir,construyó,construido,construyendo,v_creation|v_work,tr,human;kinship,emotion,artifact;building,,,,,2290.8676527677726,0.9256655126469874
-b’ukub’a,b’ukub’ank,bulge,,,abultarse,,,,v_state|v_environmental|v_process,intr,body_part,,,,,,,144.5439770745928,0.05840554537366401
-qix,qixb'ank,burp,,,eructar,,,,v_involuntary|v_instant,intr,human;kinship;occupation,emotion,,,,,,74.70218989273316,0.03018473844150924
-loq',loq'k,buy,bought,bought,comprar,,,,v_commerce|v_social,tr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;clothing;food;plant,,,,,3521.0052016845207,1.422724303218579
-tuulan,tuulano'k,calm,,,calmarse,calmó,calmado,,v_emotive|v_state|v_health,tr,human;kinship,emotion,human;kinship,,,,calm down,1063.3265716371616,0.42965587071627065
-liq,Iiqank,carry,carried,carried,cargar,cargó,cargado,cargando,v_action|v_work|v_motion,tr,human;kinship;animal_domesticated;animal_wild,emotion,artifact;food;fruit;tool,,,,,1819.7008586099826,0.7352822526060282
-mes,mesok,clean,,,limpiar,,,,v_hygiene|v_maintenance|v_action|v_work,tr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,2057.4691560478377,0.8313567301835965
-chal,chalk,come,came,come,venir,vine,,,v_motion,intr,human;kinship;occupation,,,,,,come to a place,7134.003750712564,2.882620142263757
-ayayn,ayaynak,complain,,,quejarse,,,,v_communicative|v_social|v_emotive,intr,human;kinship;occupation,emotion,,,,,,660.6934480075964,0.2669648499831753
-k'uub',k'uub'ank,cook,,,cocinar,,,,v_creation|v_process|v_work,tr,human;kinship,emotion,food;plant,,,,,1258.9254117941675,0.5086910347198916
-ojob',ojob'ak,cough,,,toser,tosió,tosido,,v_involuntary|v_instant,intr,human;kinship;occupation,emotion,,,,,,429.86623470822764,0.17369503997320548
-ajl,ajlank,count,,,contar,contó,contado,,v_abstract|v_cognition,tr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;tool,,,,,1764.6828566195,0.7130512577444077
-k’achlo,k’achlok,crawl,,,gatear,,,,v_motion|v_action,intr,human;kinship;insect,emotion,,,,,,326.0868859118932,0.13176116221747133
-b’ur,b’uruk,crush,,,aplastar,,,,v_action|v_conflict,tr,human;kinship,emotion,fruit;plant,,,,,602.5595860743575,0.24347483691168
-yaab',yaab'ak,cry,,,llorar,,,,v_emotive|v_involuntary|v_communicative,intr,human;kinship;occupation,emotion,,,,,,1148.1536214968828,0.46393173754771444
-k'irtesi,k'irtesik,cure,,,curar,,,,v_health|v_creation,tr,human;kinship,emotion,human;kinship,,,,,758.5775750291843,0.3065166593205548
-majewa,majewak,curse,,,maldecir,maldijo,maldecido,maldiciendo,v_communicative|v_ritual|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,516.8128856326035,0.20882736902923488
-set,setk,cut,cut,cut,cortar,,,,v_action|v_creation,tr,human;kinship,emotion,food;plant,,,,,3114.1055844467614,1.25830933043253
-b’uq,b’uquk,damage,,,dañar,,,,v_action|v_conflict,tr,human;kinship,emotion,artifact;tool,,,,,1847.8497974222926,0.7466563282077702
-xaj,xajok,dance,,,bailar,,,,v_expression|v_social|v_motion,intr,human;kinship,emotion,,,,,,1934.9362753909522,0.7818451568492176
-atz’um,atz’umak,decorate,,,decorar,,,,v_creation|v_expression|v_work,tr,human;kinship,emotion,building,,,,,173.78008287493745,0.07021890998718976
-k'ot,k'otak,defecate,,,defecar,,,,v_consumption|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,64.07176188675537,0.025889326361321373
-atauwa,ataw,desire,,,desear,,,,v_emotive|v_state|v_cognition,tr,human;kinship,emotion,food;fruit,,,,,1183.949922229303,0.4783958647216732
-pik,pikok,dig,dug,dug,cavar,,,,v_work|v_action,intr,human;kinship,emotion,,,,,,650.6288748655567,0.26289808154902183
-jeb ‘,jeb ‘ok,disappear,,,desapecer,,,,v_process|v_environmental|v_motion,intr,human;kinship,emotion,,,,,,532.9257028812003,0.21533803725600456
-sol,solok,disrobe,,,devestirse,,devestido,,v_action|v_hygiene,intr,human;kinship,emotion,,,,,,20.261270126211432,0.008186923838921488
-aq’u,aq’unk,dress,,,vestire,,vestido,,v_hygiene|v_action,tr,human;kinship,emotion,human;kinship,,,,,1490.5046433861962,0.6022647109953587
-uk',uk'ak,drink,drank,drunk,beber,,,,v_consumption|v_action,tr,human;kinship;animal_domesticated;animal_wild,emotion,beverage,,,,,1847.8497974222926,0.7466563282077702
-wa',wa'ak,eat,ate,eaten,comer,,,,v_consumption|v_action,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,food,,,,,2630.2679918953813,1.062806210640407
-luk,luktak,faint,,,desmayarse,desmayó,desmayado,,v_instant|v_health|v_involuntary,intr,human;kinship;occupation,emotion,,,,,,331.1311214825911,0.1337993746387873
-b’iy,b’iyok,feel,felt,felt,sentir,,sentido,,v_perceptive|v_state,tr,human;kinship,emotion,emotion,,,,,6025.595860743575,2.4347483691168
-ch'e,ch'e'ok,fight,fought,fought,pelear,,,,v_action|v_conflict|v_social,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;kinship,,,,,3066.6673307131837,1.2391410666490168
-b'ut,b'ut'uk,fill,,,llenar,,,,v_action,tr,human;kinship,,,,,,,1239.747763028944,0.5009419672195597
-karib'k,karib'k ,fish,,,pescar,pesqué,,,v_action,intr,human;kinship;occupation,,,,,,,1847.8497974222926,0.7466563282077702
-lemem,lememnak,float,,,flotar,,,,v_motion|v_environmental,intr,human;kinship,emotion,,,,,to float on water,423.3179328088207,0.17104908300255361
-pammam,pamamnak,float,,,flotar,,,,v_motion|v_environmental,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,423.3179328088207,0.17104908300255361
-keh,keho'k,freeze,froze,frozen,congelarse,congeló,congelado,,v_environmental|v_process,intr,human;kinship,emotion,,,,,,549.5408738576248,0.22205169037386469
-b’atz’un,b’atz’unenk,frolic,,,retozar,,,,v_motion|v_expression|v_social,intr,human;kinship;animal_domestic,emotion,,,,,,61.18805757518222,0.024724114732151244
-sach,sachk,get lost,got lost,gotten lost,pederse,me pierdo,,,v_involuntary,intr,human;kinship;occupation,,,,,,,3920.426655270152,1.5841175919792145
-k'e,k'ehok,give,gave,given,dar,dio,dado,,v_commerce|v_social,ditr,human;kinship;occupation,emotion,animal_domesticated;artifact;beverage;food;fruit;plant;tool;vegetable;vehicle,,human;kinship;animal_domesticated,,,6407.176188675538,2.5889326361321374
-xik,xik,go,went,gone,ir,fue,ido,yendo,v_motion|v_action,intr,human;kinship;animal_domestic;animal_wild,emotion,,,,,,5843.414133735181,2.361134626514781
-k’ampaq,k’ampaqonk,gossip,,,chismear,,,,v_communicative|v_social,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.1559986177602176
-tz'aqob',tz'aqob'resink,graduate,,,graduarse,graduó,graduado,,v_learning|v_state,intr,human;kinship,emotion,,,,,,1000.0,0.4040676516291196
-sab'esi,sab'esink,groom,,,acicalar,,,,v_action|v_hygiene,tr,human;kinship,,,,,,,263.02679918953817,0.10628062106404071
-yoob',yoob'ank,hallucinate,,,alucinar,,,,v_cognition|v_health,intr,human;kinship,emotion,,,,,,64.07176188675537,0.025889326361321373
-aanil,aanilak,hasten,,,apurarse,,,,v_action|v_motion|v_volitional,intr,human;kinship,emotion,,,,,,89.81178609606945,0.0362900374964556
-ab'i,ab'ink,hear,heard,heard,oír,oyó,oído,oyendo,v_perceptive,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,animal_domesticated;animal_wild;human;kinship,,,,,3066.6673307131837,1.2391410666490168
-b'uj,b'ujuk,hit,hit,hit,golpear,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated;animal_wild,,,,,3801.8939632056126,1.5362223654554183
-q'un,q’unuk,hold,held,held,sostener,sostuvo,sostenido,,v_action|v_state,tr,human;kinship,emotion,artifact;tool,,,,,2884.0315031266086,1.1653438366927686
-kuute’,kuute’ek,howl,,,aullar,,,,v_communicative|v_expression|v_emotive,intr,human;kinship;animal_wild;animal_domesticated,emotion,,,,,,131.82567385564073,0.05326649045927497
-ketzo,ketzonk,hug,,,abrazar,abrazó,abrazado,abrazando,v_action|v_social|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,532.9257028812003,0.21533803725600456
-yo,yohok,hunt,,,cazar,,,,v_work|v_social|v_action,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_wild,,,,,984.7666521101588,0.3979123485208221
-raho',raho'k,hurt,hurt,hurt,doler,duele,,,v_health|v_involuntary|v_state,intr,body_part,,,,,,,1964.867789993468,0.7939395136643588
-wotz’,wotz’ok,itch,,,picar,,,,v_health|v_involuntary|v_state,intr,human;kinship,emotion,body_part,,,,,196.4867789993468,0.07939395136643587
-ch'uch'ib'k,ch'uch'ib'k,joke,,,bromear,,,,v_social|v_communicative,intr,human;kinship;occupation,,,,,,,1318.2567385564062,0.5326649045927494
-b’ir ib’,b’irok ib’k,judge,,,juzgar,,,,v_cognition|v_social|v_communicative,tr,human;kinship,emotion,human;kinship,,,,,1995.262314968881,0.8062209579935565
-to',to'nink,lend,lent,lent,prestar,,,,v_commerce|v_social,ditr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;tool,,human;kinship,,,575.4399373371566,0.23251666413343258
-tz’ub’,tz'ub'uk,kiss,,,besar,,,,v_action | v_social | v_volitional,tr,human;kinship,animal_domesticated;animal_wild;artifact;tool,human;kinship,,,,"From: S. Steward, Q'eqchi' Grammar",1130.6633979496387,0.4568645039925112
-tik'ti',tik'ti'ik,lie,lied,lied,mentir,mintió,mentido,mintiendo,v_communicative|v_cognition,intr,human;kinship,emotion,,,,,,1685.259044750751,0.6809586645991693
-k'ony,k'onyank,limp,,,cojear,,,,v_motion|v_health|v_action,intr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,,,,,,193.49362753909523,0.07818451568492175
-ha’ob’resi,ha’ob’resink,liquefy,,,licuar,,,,v_process|v_environmental|v_creation,tr,human;kinship,emotion,plant;substance,,,,,38.60705432153813,0.015599861776021766
-ab'i,ab'ink,listen to,,,escuchar,,,,v_perceptive|v_cognition,tr,human;kinship;occupation,emotion,human;kinship;occupation,,,,,2362.29066263446,0.9545252405161032
-sach,sachok,lose,lost,lost,perder,pierdo,,,v_involuntary,tr,human;kinship,,,,,,,2435.940447292027,0.9842847360456766
-b'aanu,b'ananunk,make,made,made,hacer,hice,,,v_action,tr,human;kinship;occupation,,,,,,to do/make something,11306.633979496399,4.568645039925117
-tz’uyi,tz’uyink,moan,,,gemir,,,,v_communicative|v_emotive|v_involuntary,intr,human;kinship,emotion,,,,,,176.46828566194998,0.07130512577444077
-b’aqle,b’aqlenk,move,,,mover,,,,v_motion|v_action,tr,human;kinship,emotion,substance,,,,,3686.9450645195734,1.4897752339059969
-paab',paab'ank,obey,,,obedecer,obedeció,obedecido,,v_social|v_state,tr,human;kinship;animal_domesticated;animal_wild,emotion,human;kinship,,,,,357.5471604506213,0.14447324146994256
-numwa’,numwa’ak,overeat,overate,overeaten,atracarse,,,,v_consumption|v_habitual|v_volitional,intr,human;kinship,emotion,,,,,to overeat/satiate,34.145488738336006,0.01379708744822798
-posa,posank,pant,,,jadear,,,,v_involuntary|v_health|v_process,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,131.82567385564073,0.05326649045927497
-xeya,xeyank,pant,,,jadear,,,,v_involuntary|v_health|v_process,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,131.82567385564073,0.05326649045927497
-toj,tojok,pay,paid,paid,pagar,,,,v_commerce|v_action,tr,human;kinship,emotion,human;kinship,,,,,3981.0717055349733,1.6086222950226505
-jil,jilok,pet,,,acariciar,,,,v_action|v_social|v_emotive,tr,human;kinship,emotion,animal_domesticated,,,,,926.1187281287937,0.3742146196047487
-mayu,mayunk,pet,,,acariciar,,,,v_action|v_social|v_emotive,tr,human;kinship,emotion,animal_domesticated,,,,,926.1187281287937,0.3742146196047487
-ch'uy,ch'uyuk,pinch,,,pellizcar,pellizqué,,,v_action|v_conflict,tr,human;kinship,,human;kinship;occupation;animal_domesticated;body_part,,,,,321.11949093648207,0.12975399859504266
-b’anu ib’,b’anunk ib’,pretend,,,fingir,,,,v_cognition|v_communicative,intr,human;kinship,emotion,,,,,,770.3120057972146,0.31125816320419725
-wech',wech'ok,protest,,,protestar,,,,v_social|v_communicative,intr,human;kinship;occupation,emotion,,,,,,926.1187281287937,0.3742146196047487
-kel,kelonk,pull,,,jalar,,,,v_action|v_conflict,tr,human;kinship,,,,,,,1634.3058427231376,0.6603701239128875
-min,minok,push,,,empujar,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,1634.3058427231376,0.6603701239128875
-xka’awke,xka’awkenk,replant,,,replantar,,,,v_creation|v_work|v_motion,tr,human;kinship,emotion,plant,,,,,34.673685045253166,0.01401051448956317
-eqaju,eqajunk,reward,,,recompensar,,,,v_social|v_commerce,tr,human;kinship,emotion,human;kinship,,,,,770.3120057972146,0.31125816320419725
-q'ano',q'ano'k,ripen,,,madurar,,,,v_environmental|v_process,intr,fruit,,,,,,,205.746915604784,0.08313567301835972
-pom,pomok,roast,,,asar,,,,v_creation|v_process|v_work,tr,human;kinship,emotion,food;plant,,,,,380.1893963205613,0.15362223654554183
-q’a,q’ak,rot,,rotten,pudrirse,,pudrido,,v_environmental|v_process,intr,food;fruit;plant,,,,,,,292.8644564625237,0.1183370531684505
-jil,jilok,rub,,,frotar,,,,v_action|v_process,tr,human;kinship,emotion,body_part,,,,,443.2682923460091,0.17911037792990195
-aanil,aanilak,run,ran,run,correr,corrió,corrido,,v_motion|v_action,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,4570.881896148751,1.8469455136508834
-mo’o,mo’onk,rust,,,oxidarse,,,,v_environmental|v_process,intr,tool,,,,,,,311.41055844467616,0.12583093304325302
-q’ole,q’olenk,rust,,,oxidarse,,,,v_environmental|v_process,intr,tool,,,,,,,311.41055844467616,0.12583093304325302
-atz’ama,atz’amank,salt,,,salar,,,,v_creation|v_process,tr,human;kinship,emotion,food,,,,,1165.9144011798312,0.47110829408530563
-ye',yehok,say,said,said,decir,dije,,,v_communicative,tr,human;kinship,,,,,,,8446.303185839679,3.4128778932497905
-q'oy,q'oyok,scratch,,,rascar,,,,v_action|v_conflict,tr,human;kinship,emotion,body_part,,,,,593.3805862753281,0.23976590001858206
-hoyb’,hoyb’ak,scream,,,gritar,,,,v_communicative|v_emotive|v_involuntary,intr,human;kinship;occupation,emotion,,,,,,640.7176188675537,0.25889326361321374
-b’iq’,b’iq’ok,scrub,,,fregar,,fregado,,v_hygiene|v_work|v_action,tr,human;kinship,emotion,body_part,,,,,288.40315031266056,0.11653438366927675
-chek,chekok,season,,,condimentar,,,,v_creation|v_process,tr,human;kinship,emotion,food,,,,,4501.252062061341,1.8188103501078583
-il,ilok,see,saw,seen,ver,vio,visto,,v_perceptive,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,animal_domesticated;animal_wild;artifact;clothing;food;human;insect;kinship;tool;vehicle;vegetable,,,,,11659.144011798311,4.711082940853056
-b'oj,b'ojok,sew,,,coser,cosió,cosido,,v_creation|v_work|v_process,intr,human;kinship,emotion,clothing,,,,,202.61270126211434,0.0818692383892149
-b’aqle,b’aqlenk,shake,shook,shaken,sacudir,,,,v_action|v_process,tr,human;kinship,emotion,artifact;tool;body_part;food;fruit,,,,,770.3120057972146,0.31125816320419725
-b’uq,b’uquk,shame,,,avergonzar,,avorgoncé,,v_communicative|v_social|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,1079.7751623277093,0.43630221412920894
-jo’,jo’ok,shave,,,rasurarse,,,,v_hygiene|v_action,intr,human;kinship,emotion,,,,,,357.5471604506213,0.14447324146994256
-k'ut,kut'uk,show,,,mostrar,miestro,,,v_action,tr,human;kinship,,,,,,,6118.805757518219,2.4724114732151232
-pech',pech'ok,shuck,,,desgranar,,,,v_creation|v_work|v_action,tr,human;kinship,emotion,corn,,,,,38.018939632056124,0.015362223654554183
-jiq’,jiq’ok,sigh,,,suspirar,,,,v_involuntary|v_emotive|v_communicative,intr,human;kinship,emotion,,,,,,429.86623470822764,0.17369503997320548
-b'ich,b'ichank,sing,sang,sung,cantar,,,,v_communicative|v_expression,intr,human;kinship,emotion,,,,,,1063.3265716371616,0.42965587071627065
-chunla,chunlaak,sit,sat,sat,sentarse,sentó,sentado,,v_state|v_motion,intr,human;kinship,emotion,,,,,,1847.8497974222926,0.7466563282077702
-q’aab’,q'aab'ank,slander,,,difamar,,,,v_communicative|v_social,tr,human;kinship,emotion,human;kinship,,,,,168.5259044750751,0.06809586645991694
-yolesi,yolesink,slaughter,,,degollar,,degollado,,v_action|v_conflict|v_work,tr,human;kinship,emotion,animal_domesticated,,,,,363.0780547701014,0.14670809694902373
-war,wark,sleep,slept,slept,dormir,durmió,dormido,durmiendo,v_sleep|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,2326.305067153626,0.9399846254576871
-utz’,utz’uk,smell,,,oler,olió,olido,,v_perceptive,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;food;plant,,,,,984.7666521101588,0.3979123485208221
-at'isim,at'isimak,sneeze,,,estornudar,,,,v_instant|v_involuntary,intr,human;kinship,emotion,,,,,,133.86488420699928,0.05409046939712622
-joq'ya,joq'yank,snore,,,roncar,,,,v_sleep|v_habitual,intr,human;kinship,emotion,,,,,,69.18309709189363,0.02795465157435083
-chuub',chuub'ank,spit,spat,spat,escupir,escupió,escupido,,v_involuntary|v_action,intr,human;kinship,emotion,,,,,,368.6945064519577,0.14897752339059983
-kiib',kiib'ank,split,split,split,partir,partió,partido,,v_action|v_creation,tr,human;kinship,emotion,wood,,,,,2796.8338463090777,1.130110084274947
-alab’tei,alab’teik,sprout,,,brotar,,,,v_environmental|v_process,intr,plant,,,,,,,118.39499222293017,0.047839586472167274
-ch’uki,ch’ukink,spy,,,espira,,,,v_perceptive|v_social,intr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,670.9137099554113,0.2710945272274633
-chokob’a ib’,chokob’ank ib’,squat,,,agacharse,,,,v_motion|v_state,intr,human;kinship,emotion,,,,,,208.92961308540387,0.08442169811519971
-pitz',pitz’ok,squeeze,,,exprimir,exprimió,exprimido,,v_action|v_process,tr,human;kinship,emotion,fruit;plant,,,,,423.3179328088207,0.17104908300255361
-xeq,xeq'ok,stab,,,apuñalar,,,,v_action|v_conflict,tr,human;kinship,emotion,animal_domesticated;animal_wild;human;kinship,,,,,331.1311214825911,0.1337993746387873
-katz,katzok,sting,stung,stung,picar,,,,v_action|v_conflict,tr,insect,,,,,,,341.4548873833601,0.13797087448227982
-b'oj,b'ojok,stitch,,,bordar,,,,v_creation|v_work|v_process,tr,human;kinship,emotion,clothing,,,,,267.09555875589854,0.10792467518706346
-ja’n,ja’nak,strut,,,alardear,,,,v_motion|v_expression|v_social,intr,human;kinship;animal_domesticated,emotion,,,,,,127.83997194630244,0.051655997248674965
-china,chinank,sunbathe,,,asolearse,,,,v_action|v_health,intr,human;kinship,emotion,,,,,,31.141055844467598,0.012583093304325294
-nuq,nuq'uk,swallow,,,tragar,,,,v_consumption|v_action,intr,human;kinship,emotion,,,,,,380.1893963205613,0.15362223654554183
-tiqob',tiqob'ak,sweat,,,sudar,,,,v_involuntary|v_health,intr,human;kinship;occupation,emotion,,,,,,575.4399373371566,0.23251666413343258
-numx,numxik,swim,swam,swum,nadar,,,,v_motion|v_action,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,640.7176188675537,0.25889326361321374
-k'a'uxl,k'a'uxlak,think,thought,thought,pensar,pensó,pensado,,v_cognition|v_state,intr,human;kinship,emotion,,,,,,11306.633979496399,4.568645039925117
-pum,pumuk,throw,threw,thrown,tirar,,,,v_action|v_motion,tr,human;kinship,emotion,artifact,,,,,1659.5869074375614,0.6705853843627285
-b'ak,b'ak’ok,tie,,,amarrar,,,,v_action|v_creation,tr,human;kinship,emotion,artifact,,,,,1015.4689924330796,0.41031817107462276
-b’iy,b’iyok,touch,,,tocar,,,,v_action|v_perceptive,tr,human;kinship,emotion,human;kinship,,,,,1876.4341719560857,0.7582063492989272
-b’elank,b’elank,transport,,,transportar,,,,v_action|v_work|v_motion,tr,human;kinship,emotion,artifact;substance;tool,,,,,1318.2567385564062,0.5326649045927494
-chu,chu'uk,urinate,,,orinar,,,,v_consumption|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,163.43058427231378,0.06603701239128876
-xa'w,xa'wak,vomit,,,vomitar,,,,v_involuntary|v_health,intr,human;kinship;occupation,emotion,,,,,,259.02002045313253,0.1046616113894238
-juch,juch'uk,vote,,,votar,,,,v_social|v_communicative,intr,human;kinship,emotion,,,,,,2550.742783711359,1.0306726465241722
-b'e,b'ek,walk,,,caminar,,,,v_motion|v_action,intr,human;kinship,,,,,,,2435.940447292027,0.9842847360456766
-b'e,b'ek,walk,,,andar,,,,v_motion|v_action,intr,human;kinship,,,,,,,2435.940447292027,0.9842847360456766
-b’alaln,b’alalnak,wander,,,vagar,,,,v_motion|v_action,intr,human;kinship,emotion,,,,,,279.68338463090777,0.1130110084274947
-ch'a,ch'ajok,wash,,,lavar,,,,v_hygiene|v_action,tr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,940.4448517263513,0.38000334272376235
-puch',puch'uk,wash,,,lavar,,,,v_hygiene|v_action,tr,human;kinship,emotion,clothing,,,,to wash clothing,940.4448517263513,0.38000334272376235
-cha’b’e,cha’b’enk,water,,,regar,,,,v_work|v_maintenance|v_action,tr,human;kinship,emotion,plant,,,,,4786.30092322638,1.9339893740383707
-kem,kemok,weave,wove,woven,tejer,tejió,tejido,,v_creation|v_work|v_process,tr,human;kinship,emotion,clothing,,,,,225.59700688435748,0.09115645278632066
-alan,alank,weigh,,,pesar,,,,v_state|v_action|v_work,tr,human;kinship,emotion,substance,,,,,2973.9477452346046,1.201676081484662
-hob’a,hob’ank,whistle,,,silbar,,,,v_communicative|v_expression,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.1559986177602176
-xuxb’,xuxb’ak,whistle,,,chiflar,,,,v_communicative|v_expression,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.1559986177602176
-k’ojle,k’ojlenk,wiggle,,,menearse,,,,v_motion|v_action,intr,human;kinship;occupation,emotion,,,,,,149.0504643386196,0.06022647109953586
-k'anjel,k'anjelak,work,,,trabajar,,,,v_work|v_habitual,intr,human;kinship;occupation,emotion,,,,,,9404.448517263514,3.8000334272376244
+lemma_kek,gloss_kek,gloss_en,gloss_en_past,gloss_en_pp,en_infl,gloss_es,gloss_es_past_3sg,gloss_es_pp,gloss_es_gerund,es_infl,category,transitivity,agent_class_any_of,agent_class_none_of,theme_class_any_of,theme_class_none_of,goal_class_any_of,goal_none_of,notes,p_weight,p_debug_percent
+ayan,ayanak,agonize,,,,agonizar,,,,,v_emotive|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,agonize in pain,30.199517204020175,0.010843748041576676
+b’ola,b’olank,agonize,,,,agonizar,,,,,v_emotive|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,agonize in pain,30.199517204020175,0.010843748041576676
+sume,sumenk,answer,,,,responder,,,,,v_communicative,tr,human;kinship,,,,,,,2796.8338463090777,1.0042598144414085
+patz',patz'ok,ask,,,,preguntar,,,,,v_communicative|v_social,tr,human;kinship;occupation,emotion,human;kinship,,,,,3630.780547701014,1.3037052608339859
+tz'aama,tz'aamank,ask,,,,pedir,pidió,pedido,pidiendo,"{'es.verb.past':'pidió','es.verb.pp':'pedido,'es.verb.ger':'pidiendo'}",v_communicative|v_social,tr,human;kinship;occupation,emotion,human;kinship,,,,,3630.780547701014,1.3037052608339859
+atin,atink,bathe,,,,bañarse,bañó,bañado,,"{'es.verb.past':'bañó','es.verb.pp':'bañado'}",v_hygiene|v_action,intr,human;kinship,emotion,,,,,,176.46828566194998,0.06336451056881225
+ch’ox,ch’oxok,beat,beat,beaten,"{'en.verb.past':'beat','en.verb.pp':'beaten'}",golpear,,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.7855601023310889
+ch’ukib’,ch’ukib’k,beat,beat,beaten,"{'en.verb.past':'beat','en.verb.pp':'beaten'}",golpear,,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.7855601023310889
+rap,rapok,beat,beat,beaten,"{'en.verb.past':'beat','en.verb.pp':'beaten'}",golpear,,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,2187.761623949552,0.7855601023310889
+tuul,tuulank,bewitch,,,,embrujar,,,,,v_ritual|v_action,tr,human;kinship,emotion,human;kinship,,,,,21.87761623949552,0.007855601023310888
+tiw,tiwok,bite,bit,bitten,"{'en.verb.past':'bit','en.verb.pp':'bitten'}",morder,mordió,mordido,,"{'es.verb.past':'mordió','es.verb.pp':'mordido'}",v_action|v_conflict,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;kinship,,,,,747.0218989273312,0.2682333362743227
+merer,merernak,blink,,,,parpadear,,,,,v_action,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,to blink your eyes,306.6667330713184,0.11011489897978055
+woxq,woqxink,boil,,,,hervir,hirvió,hervido,hirviendo,"{'es.verb.past':'hirvió','es.verb.pp':'hervido,'es.verb.ger':'hirviendo'}",v_process|v_environmental|v_creation,tr,human;kinship,emotion,food;fruit;vegetable,,,,,357.5471604506213,0.12838454650498843
+kanasi,kanasink ib’,brag,,,,jactarse,,,,,v_communicative|v_social|v_emotive,intr,human;kinship;occupation,emotion,,,,,,212.16154368926846,0.07618089747382216
+tob',tob'ok,break,broke,broken,,romper,,,,,v_action,tr,human;kinship;occupation;animal_domestic,emotion,artifact;furniture;tool;vehicle,,,,to break/to rip,2840.0980479142136,1.0197947019118485
+musiqi,musiq'ak,breathe,,,,respirar,,,,,v_habitual|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,691.8309709189363,0.24841591623211878
+tz'akab',tz'akab'k,build,built,built,"{'en.verb.past':'built','en.verb.pp':'built'}",construir,construyó,construido,construyendo,"{'es.verb.past':'construyó','es.verb.pp':'construido,'es.verb.ger':'construyendo'}",v_creation|v_work,tr,human;kinship,emotion,artifact;building,,,,,2290.8676527677726,0.8225824093606692
+b’ukub’a,b’ukub’ank,bulge,,,,abultarse,,,,,v_state|v_environmental|v_process,intr,body_part,,,,,,,144.5439770745928,0.05190144126263273
+qix,qixb'ak,burp,,,,eructar,,,,,v_involuntary|v_instant,intr,human;kinship;occupation,emotion,,,,,,74.70218989273316,0.026823333627432288
+loq',loq'ok,buy,bought,bought,"{'en.verb.past':'bought','en.verb.pp':'bought'}",comprar,,,,,v_commerce|v_social,tr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;clothing;food;plant,,,,,3521.0052016845207,1.2642882004439844
+tuulan,tuulano'k,calm down,,,,calmarse,calmó,calmado,,"{'es.verb.past':'calmó','es.verb.pp':'calmado'}",v_emotive|v_state|v_health,tr,human;kinship,emotion,human;kinship,,,,calm down,8317.63771102671,2.9866162107877496
+liq,Iiqank,carry,carried,carried,"{'en.verb.past':'carried','en.verb.pp':'carried'}",cargar,cargó,cargado,cargando,"{'es.verb.past':'cargó','es.verb.pp':'cargado,'es.verb.ger':'cargando'}",v_action|v_work|v_motion,tr,human;kinship;animal_domesticated;animal_wild,emotion,artifact;food;fruit;tool;vegetable,,,,carry a load with a leather strap,1819.7008586099826,0.6534004331427065
+b'it,b'itonk,carry,carried,carried,"{'en.verb.past':'carried','en.verb.pp':'carried'}",cargar,cargó,cargado,cargando,"{'es.verb.past':'cargó','es.verb.pp':'cargado,'es.verb.ger':'cargando'}",v_action|v_work|v_motion,tr,human;kinship;animal_domesticated;animal_wild,emotion,artifact;food;fruit;tool;vegetable,,,,carry on head,1819.7008586099826,0.6534004331427065
+xejb',xejb’ak,clamor,,,,clamorear,,,,,v_action,intr,human;kinship;occupation;animal_domestic;animal_wild,,,,,,,55.80417174769966,0.020037617621925824
+mes,mesok,clean,,,,limpiar,,,,,v_hygiene|v_maintenance|v_action|v_work,tr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,2057.4691560478377,0.7387759539588981
+chal,chalk,come,came,come,"{'en.verb.past':'came','en.verb.pp':'come'}",venir,vine,,,{'es.verb.past':'vine'},v_motion,intr,human;kinship;occupation,,,,,,come to a place,7134.003750712564,2.5616084746577314
+ayayn,ayaynak,complain,,,,quejarse,,,,,v_communicative|v_social|v_emotive,intr,human;kinship;occupation,emotion,,,,,,660.6934480075964,0.23723535825139574
+k'uub',k'uub'ank,cook,,,,cocinar,,,,,v_creation|v_process|v_work,tr,human;kinship,emotion,food;vegetable,,,,,1258.9254117941675,0.45204265605997257
+ojob',ojob'ak,cough,,,,toser,tosió,tosido,,"{'es.verb.past':'tosió','es.verb.pp':'tosido'}",v_involuntary|v_instant,intr,human;kinship;occupation,emotion,,,,,,429.86623470822764,0.15435217421743289
+ajl,ajlank,count,,,,contar,contó,contado,,"{'es.verb.past':'contó','es.verb.pp':'contado'}",v_abstract|v_cognition,tr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;tool,,,,,1764.6828566195,0.6336451056881225
+k’achlo,k’achlok,crawl,,,,gatear,,,,,v_motion|v_action,intr,human;kinship;insect,emotion,,,,,,326.0868859118932,0.11708809801834232
+b’ur,b’uruk,crush,,,,aplastar,,,,,v_action|v_conflict,tr,human;kinship,emotion,fruit;plant,,,,,602.5595860743575,0.21636121820375517
+yaab',yaab'ak,cry,,,,llorar,,,,,v_emotive|v_involuntary|v_communicative,intr,human;kinship;occupation,emotion,,,,,,1148.1536214968828,0.41226780217793024
+k'irtes,k'irtesik,cure,,,,curar,,,,,v_health|v_creation,tr,human;kinship,emotion,human;kinship,,,,,758.5775750291843,0.27238263572345045
+majewa,majewank,curse,,,,maldecir,maldijo,maldecido,maldiciendo,"{'es.verb.past':'maldijo','es.verb.pp':'maldecido,'es.verb.ger':'maldiciendo'}",v_communicative|v_ritual|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,516.8128856326035,0.18557212946749038
+set,setk,cut,cut,cut,"{'en.verb.past':'cut','en.verb.pp':'cut'}",cortar,,,,,v_action|v_creation,tr,human;kinship,emotion,food;plant,,,,,3114.1055844467614,1.118182655188682
+b’uq,b’uquk,damage,,,,dañar,,,,,v_action|v_conflict,tr,human;kinship,emotion,artifact;tool,,,,,1847.8497974222926,0.6635078794987632
+xaj,xajok,dance,,,,bailar,,,,,v_expression|v_social|v_motion,intr,human;kinship,emotion,,,,,,1934.9362753909522,0.6947780424798705
+atz’um,atz’umak,decorate,,,,decorar,,,,,v_creation|v_expression|v_work,tr,human;kinship,emotion,building,,,,,173.78008287493745,0.06239925693544794
+xoy,xoyink,decorate,,,,decorar,,,,,v_action,tr,human;kinship;occupation,,place,,,,,173.78008287493745,0.06239925693544794
+k'ot,k'otak,defecate,,,,defecar,,,,,v_consumption|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,64.07176188675537,0.02300626323878388
+atauwa,ataw,desire,,,,desear,,,,,v_emotive|v_state|v_cognition,tr,human;kinship,emotion,food;fruit;vegetable,,,,,1183.949922229303,0.4251211886523073
+pik,pikok,dig,dug,dug,"{'en.verb.past':'dug','en.verb.pp':'dug'}",cavar,,,,,v_work|v_action,intr,human;kinship,emotion,,,,,,650.6288748655567,0.23362146950738066
+jeb ‘,jeb ‘ok,disappear,,,,desapecer,,,,,v_process|v_environmental|v_motion,intr,human;kinship,emotion,,,,,,532.9257028812003,0.1913577627047163
+sol,solok,disrobe,,,,devestirse,,devestido,,{'es.verb.pp':'devestido'},v_action|v_hygiene,intr,human;kinship,emotion,,,,,,20.261270126211432,0.007275219228395928
+rek’ob’tas,rek’ob’tasink,do well,did well,done well,"{'en.verb.past':'did well','en.verb.pp':'done well'}",prosperar,,,,,v_state,intr,human;kinship;occupation,artifact;emotion;substance;tool,,,,,to do well,10471.285480509006,3.7599270430371075
+aq’u,aq’unk,dress,,,,vestire,,vestido,,{'es.verb.pp':'vestido'},v_hygiene|v_action,tr,human;kinship,emotion,human;kinship,,,,,1490.5046433861962,0.5351958674865315
+uk',uk'ak,drink,drank,drunk,"{'en.verb.past':'drank','en.verb.pp':'drunk'}",beber,,,,,v_consumption|v_action,tr,human;kinship;animal_domesticated;animal_wild,emotion,beverage,,,,,1847.8497974222926,0.6635078794987632
+wa',wa'ak,eat,ate,eaten,"{'en.verb.past':'ate','en.verb.pp':'eaten'}",comer,,,,,v_consumption|v_action,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,food;fruit;vegetable,,,,,2630.2679918953813,0.9444509722870834
+luk,luktak,faint,,,,desmayarse,desmayó,desmayado,,"{'es.verb.past':'desmayó','es.verb.pp':'desmayado'}",v_instant|v_health|v_involuntary,intr,human;kinship;occupation,emotion,,,,,,331.1311214825911,0.11889933292059184
+b’iy,b’iyok,feel,felt,felt,"{'en.verb.past':'felt','en.verb.pp':'felt'}",sentir,,sentido,,{'es.verb.pp':'sentido'},v_perceptive|v_state,tr,human;kinship,emotion,emotion,,,,,6025.595860743575,2.1636121820375513
+ch'e,ch'e'ok,fight,fought,fought,"{'en.verb.past':'fought','en.verb.pp':'fought'}",pelear,,,,,v_action|v_conflict|v_social,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;kinship,,,,,3066.6673307131837,1.1011489897978055
+b'ut,b'ut'uk,fill,,,,llenar,,,,,v_action,tr,human;kinship,,,,,,,1239.747763028944,0.4451565330191627
+karib'k,karib'k ,fish,,,,pescar,pesqué,,,{'es.verb.past':'pesqué'},v_action,intr,human;kinship;occupation,,,,,,,1847.8497974222926,0.6635078794987632
+lemem,lememnak,float,,,,flotar,,,,,v_motion|v_environmental,intr,human;kinship,emotion,,,,,to float on water,423.3179328088207,0.1520008738500252
+pammam,pamamnak,float,,,,flotar,,,,,v_motion|v_environmental,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,423.3179328088207,0.1520008738500252
+keh,keho'k,freeze,froze,frozen,"{'en.verb.past':'froze','en.verb.pp':'frozen'}",congelarse,congeló,congelado,,"{'es.verb.past':'congeló','es.verb.pp':'congelado'}",v_environmental|v_process,intr,human;kinship,emotion,,,,,,549.5408738576248,0.19732377621807404
+b’atz’un,b’atz’unenk,frolic,,,,retozar,,,,,v_motion|v_expression|v_social,intr,human;kinship;animal_domestic,emotion,,,,,,61.18805757518222,0.021970810825096124
+sach,sachk,get lost,got lost,gotten lost,"{'en.verb.past':'got lost','en.verb.pp':'gotten lost'}",pederse,me pierdo,,,{'es.verb.past':'me pierdo'},v_involuntary,intr,human;kinship;occupation,,,,,,,3920.426655270152,1.4077085596445058
+k'e,k'ehok,give,gave,given,"{'en.verb.past':'gave','en.verb.pp':'given'}",dar,dio,dado,,"{'es.verb.past':'dio','es.verb.pp':'dado'}",v_commerce|v_social,ditr,human;kinship;occupation,emotion,animal_domesticated;artifact;beverage;food;fruit;plant;tool;vegetable;vehicle,,human;kinship;animal_domesticated,,,6407.176188675538,2.300626323878388
+xik,xik,go,went,gone,"{'en.verb.past':'went','en.verb.pp':'gone'}",ir,fue,ido,yendo,"{'es.verb.past':'fue','es.verb.pp':'ido,'es.verb.ger':'yendo'}",v_motion|v_action,intr,human;kinship;animal_domestic;animal_wild,emotion,,,,,,5843.414133735181,2.0981961446846316
+k’ampaq,k’ampaqonk,gossip,,,,chismear,,,,,v_communicative|v_social,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.13862644454279321
+tz'aqob',tz'aqob'resink,graduate,,,,graduarse,graduó,graduado,,"{'es.verb.past':'graduó','es.verb.pp':'graduado'}",v_learning|v_state,intr,human;kinship,emotion,,,,,,1000.0,0.3590702450081934
+sab'esi,sab'esink,groom,,,,acicalar,,,,,v_action|v_hygiene,tr,human;kinship,,,,,,,263.02679918953817,0.09444509722870836
+yoob',yoob'ank,hallucinate,,,,alucinar,,,,,v_cognition|v_health,intr,human;kinship,emotion,,,,,,64.07176188675537,0.02300626323878388
+yot,yotak,harden,,,,endurecer,,,,,v_process,intr,fruit;vegetable;substance,,,,,,,222.16040919558117,0.07977119256097784
+aanil,aanilak,hasten,,,,apurarse,,,,,v_action|v_motion|v_volitional,intr,human;kinship,emotion,,,,,,89.81178609606945,0.032248740038139115
+ab'i,ab'ink,hear,heard,heard,"{'en.verb.past':'heard','en.verb.pp':'heard'}",oír,oyó,oído,oyendo,"{'es.verb.past':'oyó','es.verb.pp':'oído,'es.verb.ger':'oyendo'}",v_perceptive,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,animal_domesticated;animal_wild;human;kinship,,,,,3066.6673307131837,1.1011489897978055
+xtzapb’,xtzapb’al ib’,hide,hid,hidden,"{'en.verb.past':'hid','en.verb.pp':'hidden'}",esconderse,,,,,v_action,intr,human;kinship;occupation;animal_domestic;animal_wild,,,,,,to hide yourself,1063.3265716371616,0.38180893260147797
+b'uj,b'ujuk,hit,hit,hit,"{'en.verb.past':'hit','en.verb.pp':'hit'}",golpear,,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated;animal_wild,,,,,3801.8939632056126,1.365146996863411
+q'un,q’unuk,hold,held,held,"{'en.verb.past':'held','en.verb.pp':'held'}",sostener,sostuvo,sostenido,,"{'es.verb.past':'sostuvo','es.verb.pp':'sostenido'}",v_action|v_state,tr,human;kinship,emotion,artifact;tool,,,,,2884.0315031266086,1.0355698984390198
+kuute’,kuute’ek,howl,,,,aullar,,,,,v_communicative|v_expression|v_emotive,intr,human;kinship;animal_wild;animal_domesticated,emotion,,,,,,131.82567385564073,0.047334677009715116
+ketzo,ketzonk,hug,,,,abrazar,abrazó,abrazado,abrazando,"{'es.verb.past':'abrazó','es.verb.pp':'abrazado,'es.verb.ger':'abrazando'}",v_action|v_social|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,532.9257028812003,0.1913577627047163
+yo,yohok,hunt,,,,cazar,,,,,v_work|v_social|v_action,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_wild,,,,,984.7666521101588,0.3536004030490931
+raho',raho'k,hurt,hurt,hurt,"{'en.verb.past':'hurt','en.verb.pp':'hurt'}",doler,duele,,,{'es.verb.past':'duele'},v_health|v_involuntary|v_state,intr,body_part,,,,,,,1964.867789993468,0.7055255587616621
+echajat,echajatink,imitate,,,,imitar,,,,,v_action | v_social | v_volitional,tr,human;kinship;occupation,emotion,human;kinship;animal_domesticated;animal_wild,,,,,297.39477452346046,0.10678561455229538
+wotz’,wotz’ok,itch,,,,picar,,,,,v_health|v_involuntary|v_state,intr,human;kinship,emotion,body_part,,,,,196.4867789993468,0.07055255587616621
+ch'uch'ib',ch'uch'ib'k,joke,,,,bromear,,,,,v_social|v_communicative,intr,human;kinship;occupation,,,,,,,1318.2567385564062,0.4733467700971507
+b’ir ib’,b’irok ib’k,judge,,,,juzgar,,,,,v_cognition|v_social|v_communicative,tr,human;kinship,emotion,human;kinship,,,,,1995.262314968881,0.7164393282914913
+tz’ub’,tz'ub'uk,kiss,,,,besar,,,,,v_action | v_social | v_volitional,tr,human;kinship,animal_domesticated;animal_wild;artifact;tool,human;kinship,,,,"From: S. Steward, Q'eqchi' Grammar",1130.6633979496387,0.4059875833235733
+to',to'nink,lend,lent,lent,"{'en.verb.past':'lent','en.verb.pp':'lent'}",prestar,,,,,v_commerce|v_social,ditr,human;kinship,emotion,animal_domesticated;animal_wild;artifact;tool,,human;kinship,,,575.4399373371566,0.20662335928715228
+tik'ti',tik'ti'ik,lie,lied,lied,"{'en.verb.past':'lied','en.verb.pp':'lied'}",mentir,mintió,mentido,mintiendo,"{'es.verb.past':'mintió','es.verb.pp':'mentido,'es.verb.ger':'mintiendo'}",v_communicative|v_cognition,intr,human;kinship,emotion,,,,,,1685.259044750751,0.6051263781009262
+k'ony,k'onyank,limp,,,,cojear,,,,,v_motion|v_health|v_action,intr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,,,,,,193.49362753909523,0.06947780424798705
+ha’ob’res,ha’ob’resink,liquefy,,,,licuar,,,,,v_process|v_environmental|v_creation,tr,human;kinship,emotion,plant;substance,,,,,38.60705432153813,0.01386264445427933
+ab'i,ab'ink,listen to,,,,escuchar,,,,,v_perceptive|v_cognition,tr,human;kinship;occupation,emotion,human;kinship;occupation,,,,,2362.29066263446,0.8482282870127233
+sach,sachok,lose,lost,lost,"{'en.verb.past':'lost','en.verb.pp':'lost'}",perder,pierdo,,,{'es.verb.past':'pierdo'},v_involuntary,tr,human;kinship,,,,,,,2435.940447292027,0.8746737332345165
+b'aanu,b'ananunk,make,made,made,"{'en.verb.past':'made','en.verb.pp':'made'}",hacer,hice,,,{'es.verb.past':'hice'},v_action,tr,human;kinship;occupation,,,,,,to do/make something,11306.633979496399,4.059875833235737
+yoq’,yoq’ok,mash,,,,machacar,,,,,v_action,tr,human;kinship,,fruit;food;vegetable,,,,,232.63050671536263,0.08353069304266544
+tz’uy,tz’uyink,moan,,,,gemir,,,,,v_communicative|v_emotive|v_involuntary,intr,human;kinship,emotion,,,,,,176.46828566194998,0.06336451056881225
+b’aqle,b’aqlenk,move,,,,mover,,,,,v_motion|v_action,tr,human;kinship,emotion,substance,,,,,3686.9450645195734,1.3238722676487928
+paab',paab'ank,obey,,,,obedecer,obedeció,obedecido,,"{'es.verb.past':'obedeció','es.verb.pp':'obedecido'}",v_social|v_state,tr,human;kinship;animal_domesticated;animal_wild,emotion,human;kinship,,,,,357.5471604506213,0.12838454650498843
+xok,xokink,oppress,,,,oprimir,,,,,v_social,tr,human;kinship;occupation,animal_domesticated;animal_wild;artifact;tool,human;kinship;occupation,,,,,103.11772745930548,0.037026507663500935
+numwa’,numwa’ak,overeat,overate,overeaten,"{'en.verb.past':'overate','en.verb.pp':'overeaten'}",atracarse,,,,,v_consumption|v_habitual|v_volitional,intr,human;kinship,emotion,,,,,to overeat/satiate,34.145488738336006,0.01226062900719882
+posa,posank,pant,,,,jadear,,,,,v_involuntary|v_health|v_process,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,131.82567385564073,0.047334677009715116
+xey,xeyank,pant,,,,jadear,,,,,v_involuntary|v_health|v_process,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,131.82567385564073,0.047334677009715116
+toj,tojok,pay,paid,paid,"{'en.verb.past':'paid','en.verb.pp':'paid'}",pagar,,,,,v_commerce|v_action,tr,human;kinship,emotion,human;kinship,,,,,3981.0717055349733,1.4294843927016294
+jil,jilok,pet,,,,acariciar,,,,,v_action|v_social|v_emotive,tr,human;kinship,emotion,animal_domesticated,,,,,926.1187281287937,0.3325416786158824
+mayu,mayunk,pet,,,,acariciar,,,,,v_action|v_social|v_emotive,tr,human;kinship,emotion,animal_domesticated,,,,,926.1187281287937,0.3325416786158824
+ch'uy,ch'uyuk,pinch,,,,pellizcar,pellizqué,,,{'es.verb.past':'pellizqué'},v_action|v_conflict,tr,human;kinship,,human;kinship;occupation;animal_domesticated;body_part,,,,,321.11949093648207,0.11530445428746897
+nat,natok,press,,,,presionar,,,,,v_action|v_process,tr,human;kinship,emotion,,,,,,2754.2287033381663,0.9889615753162342
+b’anu ib’,b’anunk ib’,pretend,,,,fingir,,,,,v_cognition|v_communicative,intr,human;kinship,emotion,,,,,,770.3120057972146,0.2765961206543588
+wech',wech'ok,protest,,,,protestar,,,,,v_social|v_communicative,intr,human;kinship;occupation,emotion,,,,,,926.1187281287937,0.3325416786158824
+kel,kelonk,pull,,,,jalar,,,,,v_action|v_conflict,tr,human;kinship,,,,,,,1634.3058427231376,0.5868305993649191
+min,minok,push,,,,empujar,,,,,v_action|v_conflict,tr,human;kinship,emotion,human;kinship;animal_domesticated,,,,,1634.3058427231376,0.5868305993649191
+tuye',tuye'k,reel,,,,tambalear,,,,,v_involuntary,intr,human;kinship;occupation,,,,,,,284.00980479142163,0.10197947019118495
+xka’awke,xka’awkenk,replant,,,,replantar,,,,,v_creation|v_work|v_motion,tr,human;kinship,emotion,plant,,,,,34.673685045253166,0.012450288584535988
+eqaju,eqajunk,reward,,,,recompensar,,,,,v_social|v_commerce,tr,human;kinship,emotion,human;kinship,,,,,770.3120057972146,0.2765961206543588
+tob',tob'ok,rip,,,,rasgar,,,,,v_action,tr,human;kinship;occupation,emotion,clothing,,,,to break/to rip,691.8309709189363,0.24841591623211878
+q'ano',q'ano'k,ripen,,,,madurar,,,,,v_environmental|v_process,intr,fruit,,,,,,,205.746915604784,0.07387759539588988
+yuq’yuq’,yuq’yuq’nak,ripen,,,,madurar,,,,,v_process,intr,fruit;vegetable,,,,,,to become very ripe,205.746915604784,0.07387759539588988
+pom,pomok,roast,,,,asar,,,,,v_creation|v_process|v_work,tr,human;kinship,emotion,food;plant,,,,,380.1893963205613,0.13651469968634108
+q’a,q’ak,rot,,rotten,{'en.verb.pp':'rotten'},pudrirse,,pudrido,,{'es.verb.pp':'pudrido'},v_environmental|v_process,intr,food;fruit;plant,,,,,,,292.8644564625237,0.10515891213618979
+jil,jilok,rub,,,,frotar,,,,,v_action|v_process,tr,human;kinship,emotion,body_part,,,,,443.2682923460091,0.15916445433704499
+aanil,aanilak,run,ran,run,"{'en.verb.past':'ran','en.verb.pp':'run'}",correr,corrió,corrido,,"{'es.verb.past':'corrió','es.verb.pp':'corrido'}",v_motion|v_action,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,4570.881896148751,1.641267682353648
+mo’o,mo’onk,rust,,,,oxidarse,,,,,v_environmental|v_process,intr,tool,emotion,,,,,,311.41055844467616,0.11181826551886821
+q’ole,q’olenk,rust,,,,oxidarse,,,,,v_environmental|v_process,intr,tool,,,,,,,311.41055844467616,0.11181826551886821
+atz’ama,atz’amank,salt,,,,salar,,,,,v_creation|v_process,tr,human;kinship,emotion,food,,,,,1165.9144011798312,0.41864516969022314
+ye',yehok,say,said,said,"{'en.verb.past':'said','en.verb.pp':'said'}",decir,dije,,,{'es.verb.past':'dije'},v_communicative,tr,human;kinship,,,,,,,8446.303185839679,3.032816154352938
+q'oy,q'oyok,scratch,,,,rascar,,,,,v_action|v_conflict,tr,human;kinship,emotion,body_part,,,,,593.3805862753281,0.21306531249698754
+hoyb’,hoyb’ak,scream,,,,gritar,,,,,v_communicative|v_emotive|v_involuntary,intr,human;kinship;occupation,emotion,,,,,,640.7176188675537,0.2300626323878388
+b’iq’,b’iq’ok,scrub,,,,fregar,,fregado,,{'es.verb.pp':'fregado'},v_hygiene|v_work|v_action,tr,human;kinship,emotion,body_part,,,,,288.40315031266056,0.10355698984390185
+chek,chekok,season,,,,condimentar,,,,,v_creation|v_process,tr,human;kinship,emotion,food,,,,,4501.252062061341,1.6162656807680018
+il,ilok,see,saw,seen,"{'en.verb.past':'saw','en.verb.pp':'seen'}",ver,vio,visto,,"{'es.verb.past':'vio','es.verb.pp':'visto'}",v_perceptive,tr,human;kinship;animal_domesticated;animal_wild;occupation,emotion,animal_domesticated;animal_wild;artifact;clothing;food;human;insect;kinship;tool;vehicle;vegetable,,,,,11659.144011798311,4.186451696902231
+b'oj,b'ojok,sew,,,,coser,cosió,cosido,,"{'es.verb.past':'cosió','es.verb.pp':'cosido'}",v_creation|v_work|v_process,intr,human;kinship,emotion,clothing,,,,,202.61270126211434,0.0727521922839593
+b’aqle,b’aqlenk,shake,shook,shaken,"{'en.verb.past':'shook','en.verb.pp':'shaken'}",sacudir,,,,,v_action|v_process,tr,human;kinship,emotion,artifact;tool;body_part;food;fruit,,,,,770.3120057972146,0.2765961206543588
+b’uq,b’uquk,shame,,,,avergonzar,,avorgoncé,,{'es.verb.pp':'avorgoncé'},v_communicative|v_social|v_emotive,tr,human;kinship,emotion,human;kinship,,,,,1079.7751623277093,0.3877151320907724
+jo’,jo’ok,shave,,,,rasurarse,,,,,v_hygiene|v_action,intr,human;kinship,emotion,,,,,,357.5471604506213,0.12838454650498843
+k'ut,kut'uk,show,,,,mostrar,miestro,,,{'es.verb.past':'miestro'},v_action,tr,human;kinship,,,,,,,6118.805757518219,2.197081082509612
+pech',pech'ok,shuck,,,,desgranar,,,,,v_creation|v_work|v_action,tr,human;kinship,emotion,corn,,,,,38.018939632056124,0.013651469968634108
+jiq’,jiq’ok,sigh,,,,suspirar,,,,,v_involuntary|v_emotive|v_communicative,intr,human;kinship,emotion,,,,,,429.86623470822764,0.15435217421743289
+b'ich,b'ichank,sing,sang,sung,"{'en.verb.past':'sang','en.verb.pp':'sung'}",cantar,,,,,v_communicative|v_expression,intr,human;kinship,emotion,,,,,,1063.3265716371616,0.38180893260147797
+chunla,chunlaak,sit,sat,sat,"{'en.verb.past':'sat','en.verb.pp':'sat'}",sentarse,sentó,sentado,,"{'es.verb.past':'sentó','es.verb.pp':'sentado,'es.verb.ger':''}",v_state|v_motion,intr,human;kinship,emotion,,,,,,1847.8497974222926,0.6635078794987632
+q’aab’,q'aab'ank,slander,,,,difamar,,,,,v_communicative|v_social,tr,human;kinship,emotion,human;kinship,,,,,168.5259044750751,0.06051263781009261
+yoles,yolesink,slaughter,,,,degollar,,degollado,,{'es.verb.pp':'degollado'},v_action|v_conflict|v_work,tr,human;kinship,emotion,animal_domesticated,,,,,363.0780547701014,0.13037052608339858
+war,wark,sleep,slept,slept,"{'en.verb.past':'slept','en.verb.pp':'slept'}",dormir,durmió,dormido,durmiendo,"{'es.verb.past':'durmió','es.verb.pp':'dormido,'es.verb.ger':'durmiendo'}",v_sleep|v_state,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,2326.305067153626,0.8353069304266544
+utz’,utz’uk,smell,,,,oler,olió,olido,,"{'es.verb.past':'olió','es.verb.pp':'olido'}",v_perceptive,tr,human;kinship;animal_domesticated;animal_wild,emotion,animal_domesticated;animal_wild;food;fruit;plant;vegetable,,,,,984.7666521101588,0.3536004030490931
+at'isim,at'isimak,sneeze,,,,estornudar,,,,,v_instant|v_involuntary,intr,human;kinship,emotion,,,,,,133.86488420699928,0.04806689677020068
+joq'ya,joq'yank,snore,,,,roncar,,,,,v_sleep|v_habitual,intr,human;kinship,emotion,,,,,,69.18309709189363,0.02484159162321188
+chuub',chuub'ank,spit,spat,spat,"{'en.verb.past':'spat','en.verb.pp':'spat'}",escupir,escupió,escupido,,"{'es.verb.past':'escupió','es.verb.pp':'escupido'}",v_involuntary|v_action,intr,human;kinship,emotion,,,,,,368.6945064519577,0.1323872267648794
+kiib',kiib'ank,split,split,split,"{'en.verb.past':'split','en.verb.pp':'split'}",partir,partió,partido,,"{'es.verb.past':'partió','es.verb.pp':'partido'}",v_action|v_creation,tr,human;kinship,emotion,wood,,,,,2796.8338463090777,1.0042598144414085
+alab’tei,alab’teik,sprout,,,,brotar,,,,,v_environmental|v_process,intr,plant,,,,,,,118.39499222293017,0.042512118865230694
+ch’uki,ch’ukink,spy,,,,espira,,,,,v_perceptive|v_social,intr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,670.9137099554113,0.24090515021304554
+chokob’,chokob’ank ib’,squat,,,,agacharse,,,,,v_motion|v_state,intr,human;kinship,emotion,,,,,,208.92961308540387,0.07502040736004302
+nat,natok,squeeze,squeezed,squeezed,"{'en.verb.past':'squeezed','en.verb.pp':'squeezed'}",experimir,exprimió,exprimido,,"{'es.verb.past':'exprimió','es.verb.pp':'exprimido'}",v_action|v_process,tr,human;kinship,emotion,fruit;plant,,,,,423.3179328088207,0.1520008738500252
+pitz',pitz’ok,squeeze,,,,exprimir,exprimió,exprimido,,"{'es.verb.past':'exprimió','es.verb.pp':'exprimido'}",v_action|v_process,tr,human;kinship,emotion,fruit;plant,,,,,423.3179328088207,0.1520008738500252
+xeq,xeq'ok,stab,,,,apuñalar,,,,,v_action|v_conflict,tr,human;kinship,emotion,animal_domesticated;animal_wild;human;kinship,,,,,331.1311214825911,0.11889933292059184
+katz,katzok,sting,stung,stung,"{'en.verb.past':'stung','en.verb.pp':'stung'}",picar,,,,,v_action|v_conflict,tr,insect,,,,,,,341.4548873833601,0.12260629007198819
+b'oj,b'ojok,stitch,,,,bordar,,,,,v_creation|v_work|v_process,tr,human;kinship,emotion,clothing,,,,,267.09555875589854,0.0959060677230808
+ja’n,ja’nak,strut,,,,alardear,,,,,v_motion|v_expression|v_social,intr,human;kinship;animal_domesticated,emotion,,,,,,127.83997194630244,0.04590353004859939
+china,chinank,sunbathe,,,,asolearse,,,,,v_action|v_health,intr,human;kinship,emotion,,,,,,31.141055844467598,0.011181826551886815
+nuq,nuq'uk,swallow,,,,tragar,,,,,v_consumption|v_action,intr,human;kinship,emotion,,,,,,380.1893963205613,0.13651469968634108
+tiqob',tiqob'ak,sweat,,,,sudar,,,,,v_involuntary|v_health,intr,human;kinship;occupation,emotion,,,,,,575.4399373371566,0.20662335928715228
+numx,numxik,swim,swam,swum,"{'en.verb.past':'swam','en.verb.pp':'swum'}",nadar,,,,,v_motion|v_action,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,640.7176188675537,0.2300626323878388
+k'a'uxl,k'a'uxlak,think,thought,thought,"{'en.verb.past':'thought','en.verb.pp':'thought'}",pensar,pensó,pensado,,"{'es.verb.past':'pensó','es.verb.pp':'pensado'}",v_cognition|v_state,intr,human;kinship,emotion,,,,,,11306.633979496399,4.059875833235737
+pum,pumuk,throw,threw,thrown,"{'en.verb.past':'threw','en.verb.pp':'thrown'}",tirar,,,,,v_action|v_motion,tr,human;kinship,emotion,artifact,,,,,1659.5869074375614,0.5959082774659952
+b'ak,b'ak’ok,tie,,,,amarrar,,,,,v_action|v_creation,tr,human;kinship,emotion,artifact,,,,,1015.4689924330796,0.36462469991116925
+b’iy,b’iyok,touch,,,,tocar,,,,,v_action|v_perceptive,tr,human;kinship,emotion,human;kinship,,,,,1876.4341719560857,0.6737716778660183
+b’elank,b’elank,transport,,,,transportar,,,,,v_action|v_work|v_motion,tr,human;kinship,emotion,artifact;substance;tool,,,,,1318.2567385564062,0.4733467700971507
+chu,chu'uk,urinate,,,,orinar,,,,,v_consumption|v_involuntary,intr,human;kinship;animal_domesticated;animal_wild,emotion,,,,,,163.43058427231378,0.058683059936491914
+xa'w,xa'wak,vomit,,,,vomitar,,,,,v_involuntary|v_health,intr,human;kinship;occupation,emotion,,,,,,259.02002045313253,0.09300638220613358
+juch,juch'uk,vote,,,,votar,,,,,v_social|v_communicative,intr,human;kinship,emotion,,,,,,2550.742783711359,0.915895836300119
+b'e,b'ek,walk,,,,caminar,,,,,v_motion|v_action,intr,human;kinship,,,,,,,2435.940447292027,0.8746737332345165
+b'e,b'ek,walk,,,,andar,,,,,v_motion|v_action,intr,human;kinship,,,,,,,2435.940447292027,0.8746737332345165
+b’alaln,b’alalnak,wander,,,,vagar,,,,,v_motion|v_action,intr,human;kinship,emotion,,,,,,279.68338463090777,0.10042598144414086
+tul,tulink,warm,,,,calentar,,,,,v_action | v_process,tr,human;kinship;occupation,emotion,food,,,,make warm,1380.3842646028852,0.4956549160964129
+ch'a,ch'ajok,wash,,,,lavar,,,,,v_hygiene|v_action,tr,human;kinship,emotion,artifact;body_part;clothing;dish,,,,,940.4448517263513,0.33768576332607514
+puch',puch'uk,wash,,,,lavar,,,,,v_hygiene|v_action,tr,human;kinship,emotion,clothing,,,,to wash clothing,940.4448517263513,0.33768576332607514
+cha’b’e,cha’b’enk,water,,,,regar,,,,,v_work|v_maintenance|v_action,tr,human;kinship,emotion,plant,,,,,4786.30092322638,1.718618245185839
+kem,kemok,weave,wove,woven,"{'en.verb.past':'wove','en.verb.pp':'woven'}",tejer,tejió,tejido,,"{'es.verb.past':'tejió','es.verb.pp':'tejido'}",v_creation|v_work|v_process,tr,human;kinship,emotion,clothing,,,,,225.59700688435748,0.08100517253508134
+alan,alank,weigh,,,,pesar,,,,,v_state|v_action|v_work,tr,human;kinship,emotion,substance,,,,,2973.9477452346046,1.067856145522954
+hob’a,hob’ank,whistle,,,,silbar,,,,,v_communicative|v_expression,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.13862644454279321
+sisb',sisb'ak,whistle,,,,chiflar,,,,,v_communicative|v_expression,intr,human;kinship;occupation,emotion,,,,,whistle with teeth in tongue,386.0705432153811,0.13862644454279321
+xuxb’,xuxb’ak,whistle,,,,chiflar,,,,,v_communicative|v_expression,intr,human;kinship;occupation,emotion,,,,,,386.0705432153811,0.13862644454279321
+t'oqe,t’oqek,whither,,,,machitarse,,,,,v_process,intr,plant,human;kinship;occupation;animal_domestic;animal_wild,,,,,,47.86300923226383,0.017186182451858396
+k’ojle,k’ojlenk,wiggle,,,,menearse,,,,,v_motion|v_action,intr,human;kinship;occupation,emotion,,,,,,149.0504643386196,0.05351958674865314
+k'anjel,k'anjelak,work,,,,trabajar,,,,,v_work|v_habitual,intr,human;kinship;occupation,emotion,,,,,,9404.448517263514,3.376857633260751

@@ -136,29 +136,72 @@ class QeqchiGenerator:
         self.numerals = pd.read_csv(lex_root / f"{self.lang}_numerals.csv")
 
         self.rng = random.Random(rng_seed)
-        
+
         # Round-robin index for possessed NPs
         self._possessor_rr_idx = 0
 
+        # --- Pre-computed lookup structures (built once at init, used on every render) ---
+
+        # O(1) template access by id — avoids a full DataFrame scan on every render() call
+        self._template_rows: Dict[int, Dict] = {
+            row["id"]: row for row in self.templates.to_dict("records")
+        }
+        # Pre-extracted slot token sets per template — avoids regex on every render() call
+        self._template_tokens: Dict[int, set] = {
+            tid: self._extract_slots(row)
+            for tid, row in self._template_rows.items()
+        }
+        # Pre-concatenated kek+en+es text per template — used by _fill_np_variants
+        self._template_both_tmpls: Dict[int, str] = {
+            tid: (utils._s(row.get("kek", "")) + " " +
+                  utils._s(row.get("en", "")) + " " +
+                  utils._s(row.get("es", "")))
+            for tid, row in self._template_rows.items()
+        }
+        # Pre-compiled NP slot regex patterns — avoids re.compile() on every _fill_np_variants call
+        _NP_BASE_SLOTS = [
+            "NP", "PRED_NP", "POSS_NP", "THEME_NP", "THEME_POSS_NP",
+            "GOAL_NP", "AGENT_NP", "REF_NP_DEF", "OCCUPATION",
+            "NUM_NP", "NUM_THEME_NP", "NUM_GOAL_NP", "NUM_AGENT_NP",
+        ]
+        self._np_slot_patterns: Dict[str, re.Pattern] = {
+            slot: re.compile(
+                r"\{("
+                + re.escape(slot)
+                + r"(?:_(?:PL|INDEF|DEF|[A-Z]+))*"
+                + r"(?:_(?:EN|ES))?"
+                + r")\}"
+            )
+            for slot in _NP_BASE_SLOTS
+        }
+        # Pre-filtered verb DataFrames by transitivity — avoids apply() on every verb pick
+        self._verbs_intr = self.verbs[self.verbs["_transitivity_set"].apply(lambda s: "intr" in s)]
+        self._verbs_tr   = self.verbs[self.verbs["_transitivity_set"].apply(lambda s: "tr"   in s)]
+        self._verbs_ditr = self.verbs[self.verbs["_transitivity_set"].apply(lambda s: "ditr" in s)]
+
+        # Pre-computed filter sets for adjective/adverb picking — replaces iterrows()
+        _set_from_str = lambda x: frozenset(
+            s.strip().lower()
+            for s in re.split(r"[;,/| ]+", utils._s(x)) if s.strip()
+        )
+        _TENSE_NORM = {
+            "present": "prs", "past": "pst", "future": "fut",
+            "progressive": "prg", "continuous": "prg", "perfect": "prf",
+        }
+        _norm_tense = lambda x: _TENSE_NORM.get(x, x)
+
+        self.adjs["_class_any_set"]  = self.adjs["class_any_of"].apply(_set_from_str)
+        self.adjs["_class_none_set"] = self.adjs["class_none_of"].apply(_set_from_str)
+
+        self.adverbs["_category_norm"]  = self.adverbs["category"].str.strip().str.lower().fillna("")
+        self.adverbs["_class_any_set"]  = self.adverbs["class_any_of"].apply(_set_from_str)
+        self.adverbs["_class_none_set"] = self.adverbs["class_none_of"].apply(_set_from_str)
+        self.adverbs["_tense_set"]      = self.adverbs["tense_compat"].apply(
+            lambda x: frozenset(_norm_tense(s) for s in _set_from_str(x))
+        )
+
     ## PICKERS ##
-        """
-        _pick_noun_for_slot selects a random noun appropriate for a specific slot in a template.
 
-        Filtering order:
-            1. Base filters (e.g., {'possessability': 'obligatory'}).
-            2. Verb-driven constraints (Option A: agent/theme/goal allow-lists).
-            3. Verb-less fallback defaults (for copular / zero-verb templates).
-
-        Args:
-            slot: Template slot name (e.g., 'SUBJECT_NP', 'THEME_NP', 'GOAL_NP').
-            template_id: Numeric template ID (kept for interface consistency).
-            base_filters: Dict of key-value filters for noun selection.
-            verb_arg: Dict returned by _verb_arg_constraints() if a verb is present.
-
-        Returns:
-            A random noun row (dict) or None if no valid noun is found.
-        """
-    
     def _pick_noun_for_slot(
         self,
         slot: str,
@@ -166,12 +209,27 @@ class QeqchiGenerator:
         verb_arg: Optional[Dict[str, set]] = None,
         verb_meta: Optional[Dict] = None,
     ) -> Optional[Dict]:
-        df = self.nouns.copy()
+        """
+        Selects a random noun appropriate for a specific slot in a template.
 
-        # Ensure normalized class column exists (defense-in-depth)
-        if "class" in df.columns:
-            df["class"] = df["class"].astype(str).str.strip().str.lower()
-    
+        Filtering order:
+            1. Base filters (e.g., {'possessability': 'obligatory'}).
+            2. Verb-driven constraints (agent/theme/goal allow/ban lists).
+            3. Verb-less fallback defaults (for copular / zero-verb templates).
+
+        Args:
+            slot: Template slot name (e.g., 'SUBJECT_NP', 'THEME_NP', 'GOAL_NP').
+            base_filters: Dict of key-value filters for noun selection.
+            verb_arg: Dict returned by verb_arg_constraints() if a verb is present.
+            verb_meta: Raw verb row dict for additional constraint resolution.
+
+        Returns:
+            A random noun row (dict) or None if no valid noun is found.
+        """
+        # Filter directly on self.nouns — no copy needed since we never mutate rows.
+        # 'class' is already normalized to lowercase by enrich_noun_semantics() at load time.
+        df = self.nouns
+
         # --- 1) Apply base filters (string/enum, set-of-values, or boolean-like) ---
         def _bool_norm(x):
             s = utils._s(x).lower()
@@ -230,21 +288,32 @@ class QeqchiGenerator:
 
     # ---- Adjective pick  ----
     def _pick_adjective_for_subject(self, subj_row: Dict) -> Optional[Dict]:
-        noun_cls = linguistics_core.noun_class(subj_row) if hasattr(linguistics_core, "noun_class") else utils._s(subj_row.get("class"))
-        cands = [
-            a.to_dict() for _, a in self.adjs.iterrows()
-            if linguistics_core.adj_compatible_with_noun(a, subj_row, noun_cls)
-        ]
-        
-        return self._pick_weighted(cands)
+        noun_cls = utils._s(subj_row.get("class")).strip().lower()
+        has_color = utils._s(subj_row.get("has_color")).strip().lower() in {"1", "true", "yes"}
+
+        df = self.adjs
+
+        # class_any_of: if non-empty, noun_cls must be in the allowed set
+        # class_none_of: noun_cls must not appear in the banned set
+        # Both use precomputed frozensets (_class_any_set / _class_none_set) built at init.
+        if noun_cls:
+            df = df[df["_class_any_set"].apply(lambda s: not s or noun_cls in s)]
+            df = df[df["_class_none_set"].apply(lambda s: noun_cls not in s)]
+
+        # Color adjectives only apply to nouns flagged has_color
+        if not has_color:
+            df = df[df["adj_type"].str.strip().str.lower() != "color"]
+
+        return self._pick_weighted(df)
     
     # --- Verb pick ----
     def _pick_verb_by_class(self, cls: str) -> Optional[Dict]:
-        """Sample a verb whose normalized _transitivity_set contains cls."""
-        df = self.verbs[self.verbs["_transitivity_set"].apply(lambda s: cls in s)]
-        if df.empty:
+        """Sample a verb from the pre-filtered pool for the given transitivity class."""
+        _pools = {"intr": self._verbs_intr, "tr": self._verbs_tr, "ditr": self._verbs_ditr}
+        df = _pools.get(cls)
+        if df is None or df.empty:
             return None
-        row = df.sample(n=1, random_state=self.rng.randint(0, 2**31-1)).iloc[0]
+        row = df.sample(n=1, random_state=self.rng.randint(0, 2**31 - 1)).iloc[0]
         return row.to_dict()
     
     def pick_v_intr(self) -> Optional[Dict]:
@@ -271,7 +340,7 @@ class QeqchiGenerator:
             Optional[Dict]: A dictionary representing the chosen noun row, or None if
                             no noun matches the filters or the nouns list is empty.
         """
-        df = self.nouns.copy()
+        df = self.nouns
         if filters:
             for k, v in filters.items():
                 if k in df.columns:
@@ -289,39 +358,46 @@ class QeqchiGenerator:
         """
         Select an adverb compatible with the given tense_flags and verb_category.
         If required_category is provided, restrict to adverbs whose category matches (case-insensitive).
+        Uses precomputed frozenset columns (_tense_set, _class_any_set, _class_none_set, _category_norm)
+        built at init time to avoid iterrows().
         """
         req = (required_category or "").strip().lower() or None
 
-        ok = []
-        for _, r in self.adverbs.iterrows():
-            if req:
-                cat = utils._s(r.get("category")).strip().lower()
-                if cat != req:
-                    continue
-            if linguistics_core.adverb_ok(r, tense_flags, verb_category):
-                ok.append(r)
+        df = self.adverbs
 
-        return self._pick_weighted(ok)
+        # 1. Category filter (exact match on normalized category string)
+        if req:
+            df = df[df["_category_norm"] == req]
+            if df.empty:
+                return None
+
+        # 2. Tense compatibility: _tense_set is empty (any tense ok) or overlaps active tenses
+        if tense_flags:
+            active = frozenset(t for t, on in tense_flags.items() if on)
+            if active:
+                df = df[df["_tense_set"].apply(lambda s: not s or bool(s & active))]
+            if df.empty:
+                return None
+
+        # 3. Verb-category allow/ban filter using precomputed frozensets
+        if verb_category:
+            vcat = frozenset(
+                p.strip().lower()
+                for p in re.split(r"[|;/, ]+", verb_category) if p.strip()
+            )
+            if vcat:
+                df = df[df["_class_any_set"].apply(lambda s: not s or bool(s & vcat))]
+                df = df[df["_class_none_set"].apply(lambda s: not bool(s & vcat))]
+
+        return self._pick_weighted(df)
     
     def pick_time_adverb_future(self) -> Optional[Dict]:
         """
         Selects a time adverb compatible with future tense.
-        Used specifically for future stative templates.
+        Uses the precomputed _tense_set column built at init time.
         """
-        # 1. Filter adverbs for future compatibility
-        future_candidates = []
-        
-        # We iterate over the dataframe rows
-        for _, row in self.adverbs.iterrows():
-            # Handle potential NaN/empty values safely
-            tense_compat = str(row.get("tense_compat", "")).lower()
-            
-            # Check if 'fut' is in the compatibility list (e.g. "fut;prs")
-            if "fut" in tense_compat:
-                future_candidates.append(row.to_dict())
-        
-        # 2. Use the Zipfian weighted picker
-        return self._pick_weighted(future_candidates)
+        df = self.adverbs[self.adverbs["_tense_set"].apply(lambda s: "fut" in s)]
+        return self._pick_weighted(df)
     
     def _pick_weighted(self, candidates) -> Optional[Dict]:
         """
@@ -334,8 +410,6 @@ class QeqchiGenerator:
           - A single row (as a Dict).
           - None if input is empty.
         """
-        import math
-
         chosen = None
 
         def _clean_weight(x) -> float:
@@ -357,19 +431,21 @@ class QeqchiGenerator:
             if candidates.empty:
                 return None
 
+            # Use 'p_weight' if it exists — sample a single row, then convert only that row.
+            # Avoids the expensive to_dict('records') call on the full filtered DataFrame.
+            # Uses _clean_weight to defensively handle NaN/inf/non-numeric values.
             if "p_weight" in candidates.columns:
-                weights = candidates["p_weight"].map(_clean_weight).tolist()
-                total_w = sum(weights)
-
-                if total_w > 0.0:
-                    chosen = self.rng.choices(
-                        population=candidates.to_dict("records"),
+                weights = candidates["p_weight"].map(_clean_weight)
+                if weights.sum() > 0.0:
+                    chosen = candidates.sample(
+                        n=1,
                         weights=weights,
-                        k=1
-                    )[0]
+                        random_state=self.rng.randint(0, 2**31 - 1),
+                    ).iloc[0].to_dict()
                 else:
                     chosen = candidates.iloc[self.rng.randrange(len(candidates))].to_dict()
             else:
+                # Fallback to uniform
                 chosen = candidates.iloc[self.rng.randrange(len(candidates))].to_dict()
 
         # --- CASE B: Input is a List ---
@@ -565,27 +641,33 @@ class QeqchiGenerator:
         template_id: str | int,
         *,
         person: str = "3sg",
+        annotate: bool = False,
     ) -> Optional[Dict[str, str]]:
         """
         Renders a single trilingual sentence (KEK/EN/ES) from the id of a template.
         Returns a dict with keys: id, kek, en, es, and several diagnostics fields.
         May return None if the template cannot be instantiated (e.g., constraints conflict).
+        When annotate=True the returned dict also contains '_annotation_info', a dict
+        with all component rows needed by pos_tagger.build_kek_annotation().
         """
         np_noun: Optional[Dict] = None
         poss_noun: Optional[Dict] = None
         poss_person: Optional[str] = None
+        # Variables captured for MTL annotation (populated below where relevant).
+        place_dict: Optional[Dict] = None
+        agent_row:  Optional[Dict] = None
+        occ_row:    Optional[Dict] = None
 
-        recs = self.templates[self.templates["id"] == template_id]
-        if recs.empty:
+        # O(1) dict lookup — avoids a full DataFrame scan on every call
+        t = self._template_rows.get(template_id)
+        if t is None:
             return None
-        t = recs.iloc[0].to_dict()
         kek_tmpl, en_tmpl = t["kek"], t["en"]
         es_tmpl = t.get("es", "") or ""
 
-        # Extract all {SLOTS} once across KEK/EN/ES templates
-        tokens = self._extract_slots(t)
-
-        both_tmpl = f"{kek_tmpl} {en_tmpl} {es_tmpl}"  # Keep for _fill_np_variants
+        # Pre-computed at init: slot token set and concatenated template text
+        tokens    = self._template_tokens[template_id]
+        both_tmpl = self._template_both_tmpls[template_id]
 
         # --- Copular stative predicate context (pronoun/name subject) ---
         # Intended target: "I am a grandfather." / "Yo soy un abuelo." / (KEK predicate nominal)
@@ -728,7 +810,8 @@ class QeqchiGenerator:
             if noun_row is None:
                 return
 
-            pattern = re.compile(
+            # Use pre-compiled pattern if available; compile on-the-fly only for unknown slots
+            pattern = self._np_slot_patterns.get(base_slot) or re.compile(
                 r"\{("
                 + re.escape(base_slot)
                 + r"(?:_(?:PL|INDEF|DEF|[A-Z]+))*"
@@ -1828,7 +1911,9 @@ class QeqchiGenerator:
         # Clean up empty-affix artifacts (e.g. trailing '-') ---
         kek_sent = utils.cleanup_qeqchi_surface(kek_sent)
         en_sent  = re.sub(r"\s+"," ", en_tmpl.format_map(utils._SafeDict(repl))).strip()
+        en_sent  = linguistics_en.clean_english_surface(en_sent)
         es_sent  = re.sub(r"\s+"," ", es_tmpl.format_map(utils._SafeDict(repl))).strip()
+        es_sent  = linguistics_es.clean_spanish_surface(es_sent)
 
         # Clean-up
         # Sentence-case
@@ -1863,12 +1948,35 @@ class QeqchiGenerator:
         if not self._validate_semantics(int(t["id"]), chosen_for_check):
             return None
 
-        return {
+        result: Dict[str, object] = {
             "id": template_id,
             "kek": kek_sent,
             "en":  en_sent,
             "es":  es_sent,
         }
+
+        if annotate:
+            result["_annotation_info"] = {
+                "kek_tmpl":        kek_tmpl,
+                "repl":            dict(repl),
+                "np_noun":         np_noun,
+                "poss_noun":       poss_noun,
+                "possessum_row":   possessum_row,
+                "theme_row":       theme_row,
+                "goal_row":        goal_row,
+                "agent_row":       agent_row,
+                "occ_row":         occ_row,
+                "chosen_v_intr":   chosen_v_intr,
+                "chosen_v_tr":     chosen_v_tr,
+                "chosen_v_ditr":   chosen_v_ditr,
+                "chosen_adj":      chosen_adj,
+                "chosen_adv":      chosen_adv,
+                "chosen_num":      chosen_num,
+                "chosen_name_dict": chosen_name_dict,
+                "place_dict":      place_dict,
+            }
+
+        return result
 
     def render_many(
             self,
@@ -1876,7 +1984,8 @@ class QeqchiGenerator:
             *,
             person: str = "3sg",
             allow_ids: Optional[List[int]] = None,
-            exclude_en_set: Optional[set] = None, # <--- NEW ARGUMENT
+            exclude_en_set: Optional[set] = None,
+            annotate: bool = False,
         ) -> List[Dict[str, str]]:
             """
             Generate exactly n *attempted* sentences, distributing attempts over
@@ -1886,11 +1995,11 @@ class QeqchiGenerator:
             - allow_ids: optional subset of template IDs to consider.
             - exclude_en_set: optional set of English sentences to strictly avoid (global history).
             """
-            # 1) Select templates to use
+            # 1) Select templates to use — no copy needed, we only read from df
             if allow_ids:
-                df = self.templates[self.templates["id"].isin(allow_ids)].copy()
+                df = self.templates[self.templates["id"].isin(allow_ids)]
             else:
-                df = self.templates.copy()
+                df = self.templates
 
             if df.empty:
                 return []
@@ -1928,7 +2037,7 @@ class QeqchiGenerator:
                         break
 
                     tries += 1
-                    s = self.render(tid, person=person)
+                    s = self.render(tid, person=person, annotate=annotate)
                     if s is None:
                         continue
 

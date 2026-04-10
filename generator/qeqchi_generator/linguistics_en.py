@@ -470,3 +470,34 @@ def embed_adj_into_np_in_template_en(tmpl: str, repl: Dict[str, str]) -> tuple[s
         out = out.replace(m.group(0), "{" + synth_key + "}", 1)
 
     return out, repl
+
+def clean_english_surface(text: str) -> str:
+    """
+    Post-process English surface forms after template assembly.
+
+    Conservative cleanup only:
+    - normalize whitespace
+    - remove obvious doubled determiners/auxiliaries
+    - remove stray unresolved placeholders
+    """
+    if not text:
+        return text
+
+    t = text.strip()
+
+    # Normalize whitespace
+    t = re.sub(r"\s+", " ", t)
+
+    # Remove stray placeholders defensively
+    t = re.sub(r"\{[^}]+\}", "", t)
+
+    # Collapse obvious doubled determiners
+    t = re.sub(r"\b(the|a|an|this|that|these|those) \1\b", r"\1", t, flags=re.IGNORECASE)
+
+    # Collapse obvious doubled auxiliaries
+    t = re.sub(r"\b(is|are|was|were|do|does|did|will|have|has|had) \1\b", r"\1", t, flags=re.IGNORECASE)
+
+    # Normalize whitespace again after deletions
+    t = re.sub(r"\s+", " ", t).strip()
+
+    return t

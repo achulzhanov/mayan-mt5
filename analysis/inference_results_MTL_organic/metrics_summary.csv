@@ -1,2 +1,2 @@
 Checkpoint,BLEU,chrF,TER,Rep_Penalty,No_Repeat_NGram
-checkpoint-22000,39.8752,59.1138,42.3608,1.0,0
+checkpoint-25000,0.4778,12.2616,94.1351,1.0,0

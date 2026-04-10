@@ -1,140 +1,153 @@
 lemma_kek,gloss_en,comp_en,gloss_es,copula_es,adj_type,class_any_of,class_none_of,notes,p_weight,p_debug_percent
-el naleeb’,abusive,more abusive,abusivo,ser,temperament,human;kinship,,,380.1893963205613,0.17239450374954365
-kub'enaq,affordable,more affordable,económico,ser,price,animal_domesticated;beverage;clothing;food;fruit;tool;vegetable;vehicle,animal_wild;human;kinship;emotion,,1905.4607179632462,0.8640192442678015
-yaj,ailing,more ailing,enfermo,estar,health,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,884.4365191385999,0.4010422076219982
-aj aj ru,alert,more alert,despierto,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,wide awake / alert,770.3120057972146,0.34929316087436735
-mayer,ancient,more ancient,antiguo,ser,age,building,,,1513.5612484362073,0.6863148810670505
-josq',angry,,enojado,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1278.3997194630244,0.579682356644582
-ch'i'lenb'il,annoyed,more annoyed,molesto,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,566.6740605819913,0.25695480833295375
-b’ach’b’ach’,arrogant,more arrogant,arrogante,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,311.41055844467616,0.14120716991320995
-t'uru',bald,,calvo,ser,appearance,human;kinship,,,392.0426655270152,0.17776929453127663
-chaq'al ru,beautiful,more beautiful,bonito,ser,appearance,animal_domesticated;animal_wild;human;kinship;occupation,,,3019.9517204020162,1.369378218395435
-nim,big,,grande,ser,size,animal_domesticated;animal_wild,beverage;emotion,singular,6025.595860743575,2.732268754103635
-k'a,bitter,more bitter,amargo,estar,taste,food,animal;artifact,,640.7176188675537,0.29052939670923567
-q'eq,black,,negro,ser,color,clothing,emotion,,4365.158322401661,1.9793537380619655
-raxmoyin,blue,,azul,ser,color,clothing,emotion,,2630.2679918953813,1.19267856910135
-nim ru,broad,,ancho,ser,size,,emotion,,1047.1285480508996,0.4748138905247322
-jorol,broken,more broken,roto,estar,condition,artifact;tool,animal_domesticated;animal_wild,,1791.980722375334,0.8125624500641476
-toqol,broken,more broken,roto,estar,condition,artifact;tool,animal_domesticated;animal_wild,,1791.980722375334,0.8125624500641476
-q'anjorink,brown,,café,ser,color,clothing;fruit;vegetable;wood,emotion,,2187.761623949552,0.9920268243490762
-pumpu,bulgy,,abultado,estar,size,body_part,,,71.34003750712561,0.03234869378930551
-b’ukb’u,bulky,,voluminoso,ser,size,,beverage;emotion,,158.48931924611125,0.07186599049174663
-tuulan,calm,,tranquilo,estar,emotion,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,1183.949922229303,0.5368546868543821
-xchu’ke,calm,,tranquilo,estar,emotion,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,calm (again),1183.949922229303,0.5368546868543821
-k'ub'enaq xtz'aq,cheap,,barato,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,1380.3842646028852,0.6259266107444126
-sa' ch'oolej,cheerful,more cheerful,alegre,estar,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,691.8309709189363,0.31370642649268643
-nim tib'elej,chubby,,gordito,ser,shape,human;kinship;occupation,beverage;emotion,,193.49362753909523,0.08773847514194162
-t’inis,chubby,,rellenito,ser,shape,human;kinship;occupation,,,193.49362753909523,0.08773847514194162
-saqsaq ru,clean,,limpio,estar,cleanliness,artifact;boy_part;clothing;tool;vehicle,,,2057.4691560478377,0.9329465197335302
-ke,cold,,frío,estar,temperature,food,,,2221.6040919558095,1.007372479788344
-tz’aqob’,complete,more complete,completo,estar,completeness,,animal_wild;human;kinship,,2511.88643150958,1.138999190998444
-sa' ch'oolej,content,more content,contento,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,2154.4346900318847,0.9769149346177125
-terto,costly,,caro,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,844.6303185839678,0.3829923349606773
-jorol,cracked,more cracked,rajado,estar,condition,artifact;tool,animal_domesticated;animal_wild;human;kinship,,457.0881896148752,0.20726378058159461
-chek'chek',crisp,,crujiente,estar,freshness,food;fruit;vegetable,,,292.8644564625237,0.13279755597172643
-tz’eb’ ru,cross-eyed,,bizco,ser,,human;kinship;occupation,,,410.51906712730784,0.1861473032705684
-tz’apel xik,deaf,,sordo,ser,,human;kinship;animal_domesticated,,,457.0881896148752,0.20726378058159461
-tz'ap xik,deaf,,sordo,ser,health,human;kinship;animal_domesticated,artifact;body_part;building;fruit;food;tool;vegetable,,457.0881896148752,0.20726378058159461
-saasa,delicious,more delicious,delicioso,estar,taste,food;fruit;vegetable,artifact;body_part;clothing;tool;vehicle,,782.2279563860021,0.3546963741368594
-lunlu,depressed,more depressed,deprimido,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,unexcited and depressed,575.4399373371566,0.2609296403186997
-rah sa,difficult,more difficult,difícil,ser,,,,,3114.1055844467614,1.4120716991320994
-b'alak',dirty,,sucio,estar,cleanliness,artifact;boy_part;clothing;tool;vehicle,,,1079.7751623277093,0.4896172935702185
-aj yik'ti',dishonest,more dishonest,deshonesto,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,222.16040919558117,0.1007372479788345
-maak'a' xsa',empty,,vacío,estar,crowdedness,place,animal_wild;human;kinship,,1148.1536214968828,0.5206230781862861
-anum ru,evil,more evil,malo,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,2255.970068843577,1.0229555170554845
-terto,expensive,more expensive,caro,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,1338.648842069994,0.6070019444439648
-tzukux tzukux,extremely upset,more upset,muy alterado,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1560.7499630921113,0.7077123085713783
-saqpukin,extremely white,,blanquísimo,ser,color,clothing,emotion,,4713.389536157405,2.137257003819817
-seeb',fast,,rápido,ser,speed,vehicle,,,2630.2679918953813,1.19267856910135
-k’upus,fat,,gordo,ser,,animal_domesticated;animal_wild;human;kinship;occupation,,fat / chubby,1711.3283041617792,0.7759911154906733
-t’onod,fat,,pesado,ser,,animal_domesticated;animal_wild;human;kinship;occupation,,,1711.3283041617792,0.7759911154906733
-tz’ub,fermented,more fermented,fermentado,estar,,fruit,animal_wild;human;kinship,,131.82567385564073,0.059775527265443926
-ch’am,filthy,,sucio,estar,cleanliness,animal_domesticated;human;kinship,,,541.1695265464632,0.2453899369005297
-ch'am,filthy,,mugroso,estar,cleanliness,animal_domesticated;human;kinship,,,341.4548873833601,0.15483058294892052
-t'ant'oo,flat,,plano,ser,shape,,beverage;emotion;human;kinship;occupation,,1401.7374183467693,0.635609064749681
-mem,foolish,more foolish,tonto,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,844.6303185839678,0.3829923349606773
-chaab'il,fresh,more fresh,fresco,estar,freshness,fruit;vegetable,,,1659.5869074375614,0.7525293027786248
-nujenaq,full,,lleno,estar,crowdedness,place,,,4935.524741394806,2.2379828232214605
-q’anjorin,golden,,dorado,ser,color,clothing,emotion,,1298.175275049849,0.5886494586331068
-rax,green,,verde,ser,color,clothing;fruit;vegetable,emotion,,2630.2679918953813,1.19267856910135
-cha,grey,,gris,ser,color,clothing,emotion,,969.7653591082496,0.4397340363906494
-josq',grumpy,,gruñón,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,205.746915604784,0.09329465197335311
-tojel,guilty,,culpable,estar,,human;kinship,,,1183.949922229303,0.5368546868543821
-sa ch'oolej,happy,,feliz,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,3686.9450645195734,1.671822178369645
-kaw rib',hard,,duro,estar,texture,tool,,,4860.340175990221,2.203890852303839
-k’urux,harsh,,áspero,ser,,human;kinship,,,575.4399373371566,0.2609296403186997
-raalil,heavy,,pesado,ser,weight,artifact;tool,,,2026.1270126211432,0.9187346208358127
-tiik,honest,more honest,honesto,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1423.420883864343,0.645441296562692
-tiq,hot,,caliente,estar,temperature,food,,,2754.2287033381663,1.2488877783545211
-aajel ru,important,more important,importante,ser,importance,,,,4501.252062061341,2.0410645930703146
-seeb',intelligent,more intelligent,inteligente,ser,intelligence,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1318.2567385564062,0.5977552726544387
-sahil ch'oolej,joyful,more joyful,gozoso,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,184.78497974222907,0.0837895932693803
-chaab'il,kind,,amable,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,4298.662347082277,1.9492015539730079
-nim,large,,grande,ser,size,animal_domesticated;animal_wild,emotion,,3920.426655270152,1.7776929453127661
-jok,lazy,,perezoso,ser,,human;kinship;occupation;animal_domesticated,,,670.9137099554113,0.3042216253422458
-moko aal ta,light,,liviano,ser,weight,fruit;tool;vegetable,,,3575.4716045062128,1.6212752351717752
-b’arb’okil,log-shaped,,alargado,ser,shape,artifact;tool,beverage;emotion;human;kinship;occupation,,524.8074602497728,0.23797066027989316
-najt,long,,largo,ser,size,artifact;tool,beverage;emotion;human;kinship;occupation,,7470.218989273311,3.3873240758938614
-tzipix,multicolored,,multicolor,ser,color,clothing,emotion,,87.0963589956081,0.03949329921547822
-mem,naïve,more naïve,ingenuo,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,263.02679918953817,0.119267856910135
-jay,narrow,,angosto,ser,size,,beverage;emotion;human;kinship;occupation,,844.6303185839678,0.3829923349606773
-tento,necessary,more necessary,necesario,ser,importance,,,,2590.200204531325,1.174510081537471
-xiw,nervous,more nervous,nervioso,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,884.4365191385999,0.4010422076219982
-b’it’ b’it’,nice,,agradable,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,3801.8939632056126,1.7239450374954366
-cheek,old,,viejo,ser,age,animal_domesticated;animal_wild;human;kinship,,,6812.920690579615,3.089276273626445
-kaqiq'an,orange,,anaranjado,ser,color,clothing,emotion,,1202.2644346174131,0.5451592879429958
-b’aqb’o,oval-shaped,,ovalado,ser,shape,artifact;tool,beverage;emotion,,357.5471604506213,0.16212752351717752
-saqikaq,pink,,rosado,ser,color,clothing,emotion,,1031.177274593055,0.46758088534743963
-q'eqmoyin,purple,,morado,ser,color,clothing,emotion,,758.5775750291843,0.34397225663922587
-kaq,red,,rojo,ser,color,clothing,emotion,,3521.0052016845207,1.5965777854892191
-q'an,ripe,,maduro,estar,freshness,fruit;vegetable,,,1096.478196143184,0.4971911797795612
-q’eenak,rotten,more rotten,podrido,estar,freshness,fruit;vegetable,,,346.73685045253166,0.1572256560649668
-q'aynaq,rotten,more rotten,podrido,estar,freshness,fruit;vegetable,,,346.73685045253166,0.1572256560649668
-t'ort'oo,round,,redondo,ser,shape,artifact;building,beverage;emotion;human;kinship;occupation,,2670.9555875589826,1.2111281048618747
-k’ul ru,sad,,triste,estar,emotion,human;kinship,,,1711.3283041617792,0.7759911154906733
-ra ch'oolej,sad,,triste,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1711.3283041617792,0.7759911154906733
-atz'amil,salty,,salado,estar,taste,food,,,311.41055844467616,0.14120716991320995
-rahb’il,scarce,,escaso,ser,,fruit;vegetable,animal_domesticated;body_part;human;kinship,,357.5471604506213,0.16212752351717752
-kach'in roq,short,,corto,ser,size,human;kinship;occupation,emotion,,3575.4716045062128,1.6212752351717752
-xutaan,shy,,tímido,ser,temperament,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,593.3805862753281,0.26906471536438314
-yaj,sick,,enfermo,estar,health,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,1791.980722375334,0.8125624500641476
-saqirax,sky blue,,celeste,ser,color,clothing,emotion,,2630.2679918953813,1.19267856910135
-yolyol,slippery,more slippery,resbaloso,ser,texture,,human;kinship;occupation;animal_domesticated;animal_wild,,255.07427837113593,0.1156618360865284
-timil,slow,,lento,ser,speed,vehicle,,,1711.3283041617792,0.7759911154906733
-kach'in,small,,pequeño,ser,size,animal_domesticated;animal_wild;human;kinship,emotion,,4713.389536157405,2.137257003819817
-seeb',smart,,listo,ser,intelligence,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1659.5869074375614,0.7525293027786248
-q'un ru,smooth,,liso,estar,texture,clothing,,,857.6958985908946,0.3889168404921123
-q'un,soft,,suave,ser,texture,clothing,,,1318.2567385564062,0.5977552726544387
-ra li re,sour,more sour,agrio,estar,taste,food,,,386.0705432153811,0.17506127302354985
-remrem,sour,more sour,agrio,ser,taste,food;fruit,,,386.0705432153811,0.17506127302354985
-ra,spicy,more spicy,picante,estar,taste,food,,,341.4548873833601,0.15483058294892052
-q'aynaq,stale,,viejo,estar,freshness,fruit,,,2255.970068843577,1.0229555170554845
-t’ayt’ay,sticky,,pegajoso,ser,,plant,,,341.4548873833601,0.15483058294892052
-mem,stupid,more stupid,estúpido,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1964.867789993468,0.8909570095000235
-ki',sweet,,dulce,estar,taste,food,,,1876.4341719560857,0.8508573385363525
-nim roq,tall,,alto,ser,size,human;kinship,emotion,,3362.533862951628,1.524719948148727
-ch’axch’ax,tasteless,more tasteless,insípido,ser,taste,food,,,104.71285480508996,0.047481389052473226
-t’ikt’o,thick,,grueso,ser,,plant;wood,,thick / wide,940.4448517263513,0.42643883571249774
-kach'in,tiny,,diminuto,ser,size,animal_domesticated;animal_wild;human;kinship,emotion,,1202.2644346174131,0.5451592879429958
-t’omt’o,toothless,more toothless,desdentado,ser,,human;kinship,,,94.04448517263518,0.04264388357124979
-b’arxuk,triangular,,triangular,ser,shape,artifact;tool,beverage;emotion,,190.54607179632464,0.08640192442678016
-aj tzajil,troublesome,more troublesome,travieso,ser,temperament,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,devilish / troublesome,181.97008586099844,0.08251319724555953
-yokos,twisted,more twisted,torcido,estar,,wood,,,450.1252062061336,0.20410645930703125
-yib' ru,ugly,,feo,ser,appearance,animal_domesticated;animal_wild;human;kinship,,,884.4365191385999,0.4010422076219982
-ham ham,very dry,drier,reseco,estar,,food,,,1445.439770745928,0.6554256230952173
-liq’liq’,very flexible,more flexible,muy flexible,ser,,,,,566.6740605819913,0.25695480833295375
-ch'ina us,very pretty,prettier,lindísimo,ser,,human;kinship,,,3860.705432153811,1.7506127302354986
-wej wej,very stiff,,rígido,estar,,wood,,,398.1071705534973,0.18051920640321503
-yunyu’,very tall,,altísimo,ser,size,plant,emotion,,1031.177274593055,0.46758088534743963
-saq ch'oolej,virtuous,more virtuous,virtuoso,ser,morality,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,142.34208838643414,0.06454412965626913
-t’oq’t’oq’,weak,,débil,estar,,animal_domesticated;animal_wild;human;kinship,,weak (again),1278.3997194630244,0.579682356644582
-takatz,weak,,débil,ser,,animal_domesticated;animal_wild;human;kinship,,,1278.3997194630244,0.579682356644582
-lanlan,wet,,empapado,estar,,plant,human;kinship,"humid but in a way that denotes nature: tree is wet, grass is wet",1063.3265716371616,0.48215878300438086
-t'aqt'aq,wet,,empapado,estar,,animal_domesticated;animal_wild;human;kinship,,,1063.3265716371616,0.48215878300438086
-b’akx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,,1063.3265716371616,0.48215878300438086
-t’oqx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,wet (again),1063.3265716371616,0.48215878300438086
-tz’uqx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,wet (again),1063.3265716371616,0.48215878300438086
-saq,white,,blanco,ser,color,building;clothing,emotion,,4713.389536157405,2.137257003819817
-seeb',wise,,sabio,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1015.4689924330796,0.4604580630543016
-q'an,yellow,,amarillo,ser,color,clothing;corn,emotion,,1338.648842069994,0.6070019444439648
-saaj,young,,joven,ser,age,animal_domesticated;human;kinship;occupation,,,4168.693834703351,1.8902681449629901
+el naleeb’,abusive,more abusive,abusivo,ser,temperament,human;kinship,,,380.1893963205613,0.165490148934088
+kub'enaq,affordable,more affordable,económico,ser,price,animal_domesticated;beverage;clothing;food;fruit;tool;vegetable;vehicle,animal_wild;human;kinship;emotion,,1905.4607179632462,0.829415499368408
+yaj,ailing,more ailing,enfermo,estar,health,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,884.4365191385999,0.3849805720293772
+aj aj ru,alert,more alert,despierto,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,wide awake / alert,770.3120057972146,0.3353040610780518
+mayer,ancient,more ancient,antiguo,ser,age,building,,,1513.5612484362073,0.6588281494662659
+josq',angry,,enojado,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1278.3997194630244,0.5564662297757792
+ch'i'lenb'il,annoyed,more annoyed,molesto,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,566.6740605819913,0.24666383542093132
+b’ach’b’ach’,arrogant,more arrogant,arrogante,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,311.41055844467616,0.13555185966629194
+t'uru',bald,,calvo,ser,appearance,human;kinship,,,392.0426655270152,0.1706496807498516
+chaq'al ru,beautiful,more beautiful,bonito,ser,appearance,animal_domesticated;animal_wild;human;kinship;occupation,,,3019.9517204020162,1.3145349786707254
+nim,big,,grande,ser,size,animal_domesticated;animal_wild,beverage;emotion,singular,6025.595860743575,2.6228421046501174
+k'a,bitter,more bitter,amargo,estar,taste,food,animal;artifact,,640.7176188675537,0.27889377030832063
+q'eq,black,,negro,ser,color,clothing,emotion,,4365.158322401661,1.9000811382073168
+raxmoyin,blue,,azul,ser,color,clothing,emotion,,2630.2679918953813,1.1449121041458945
+nim ru,broad,,ancho,ser,size,,emotion,,1047.1285480508996,0.4557977183139732
+jorol,broken,more broken,roto,estar,condition,artifact;tool,animal_domesticated;animal_wild,,1791.980722375334,0.7800195363230609
+toqol,broken,more broken,roto,estar,condition,artifact;tool,animal_domesticated;animal_wild,,1791.980722375334,0.7800195363230609
+q'anjorink,brown,,café,ser,color,clothing;fruit;vegetable;wood,emotion,,2187.761623949552,0.9522964093254833
+pumpu,bulgy,,abultado,estar,size,body_part,,,71.34003750712561,0.031053137058202455
+b’ukb’u,bulky,,voluminoso,ser,size,,beverage;emotion,,158.48931924611125,0.0689877763565672
+tuulan,calm,,tranquilo,estar,emotion,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,1183.949922229303,0.5153537969665697
+xchu’ke,calm,,tranquilo,estar,emotion,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,calm (again),1183.949922229303,0.5153537969665697
+k'ub'enaq xtz'aq,cheap,,barato,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,1380.3842646028852,0.6008584135860304
+sa' ch'oolej,cheerful,more cheerful,alegre,estar,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,691.8309709189363,0.30114256610685386
+nim tib'elej,chubby,,gordito,ser,shape,human;kinship;occupation,beverage;emotion,,193.49362753909523,0.08422457214520178
+t’inis,chubby,,rellenito,ser,shape,human;kinship;occupation,,,193.49362753909523,0.08422457214520178
+teb'es,chubby,chubbier,gordo,ser,shape,animal_domesticated;animal_wild;human;kinship,,fat/chubby,844.6303185839678,0.3676535920503462
+surso,circular,more circular,circular,ser,shape,artifact;building;tool,human;kinship;occupation;animal_domesticated;animal_wild;insect,,691.8309709189363,0.30114256610685386
+saqsaq ru,clean,,limpio,estar,cleanliness,artifact;boy_part;clothing;tool;vehicle,,,2057.4691560478377,0.8955822554676408
+ke,cold,,frío,estar,temperature,food,,,2221.6040919558095,0.967027475275388
+tz’aqob’,complete,more complete,completo,estar,completeness,,animal_wild;human;kinship,,2511.88643150958,1.0933825711055314
+sa' ch'oolej,content,more content,contento,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,2154.4346900318847,0.9377897468279816
+terto,costly,,caro,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,844.6303185839678,0.3676535920503462
+jorol,cracked,more cracked,rajado,estar,condition,artifact;tool,animal_domesticated;animal_wild;human;kinship,,457.0881896148752,0.1989629203429928
+chek'chek',crisp,,crujiente,estar,freshness,food;fruit;vegetable,,,292.8644564625237,0.12747904856509712
+tz’eb’ ru,cross-eyed,,bizco,ser,,human;kinship;occupation,,,410.51906712730784,0.17869215242894165
+tz’apel xik,deaf,,sordo,ser,,human;kinship;animal_domesticated,,,457.0881896148752,0.1989629203429928
+tz'ap xik,deaf,,sordo,ser,health,human;kinship;animal_domesticated,artifact;body_part;building;fruit;food;tool;vegetable,,457.0881896148752,0.1989629203429928
+saasa,delicious,more delicious,delicioso,estar,taste,food;fruit;vegetable,artifact;body_part;clothing;tool;vehicle,,782.2279563860021,0.34049087706164904
+xomxo,dented,,abollado,ser,shape,artifact;tool;vehicle,human;kinship;occupation;animal_domesticated;animal_wild,,70.25328989730521,0.03058009381832392
+lunlu,depressed,more depressed,deprimido,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,unexcited and depressed,575.4399373371566,0.2504794764245721
+rah sa,difficult,more difficult,difícil,ser,,,,,3114.1055844467614,1.3555185966629195
+sak'a,diligent,more diligent,diligente,ser,,human;kinship;occupation,animal_domestic;animal_wild;artifact;body_part;building;fruit;food;insect;tool;vegetable,,142.34208838643414,0.061959154133794936
+b'alak',dirty,,sucio,estar,cleanliness,artifact;boy_part;clothing;tool;vehicle,,,1079.7751623277093,0.47000824893673576
+aj yik'ti',dishonest,more dishonest,deshonesto,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,222.16040919558117,0.0967027475275389
+maak'a' xsa',empty,,vacío,estar,crowdedness,building;container;place,animal_wild;human;kinship,,1148.1536214968828,0.4997722599830849
+anum ru,evil,more evil,malo,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,2255.970068843577,0.981986415973005
+terto,expensive,more expensive,caro,ser,price,artifact;clothing;food;fruit;tool;vehicle,animal_wild;human;kinship,,1338.648842069994,0.58269167522447
+tzukux tzukux,extremely upset,more upset,muy alterado,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1560.7499630921113,0.6793686155918104
+saqpukin,extremely white,,blanquísimo,ser,color,clothing,emotion,,4713.389536157405,2.051660419443624
+seeb',fast,,rápido,ser,speed,vehicle,,,2630.2679918953813,1.1449121041458945
+k’upus,fat,,gordo,ser,,animal_domesticated;animal_wild;human;kinship;occupation,,fat / chubby,1711.3283041617792,0.7449128741404004
+t’onod,fat,,pesado,ser,,animal_domesticated;animal_wild;human;kinship;occupation,,,1711.3283041617792,0.7449128741404004
+tz’ub,fermented,more fermented,fermentado,estar,,fruit;vegetable,animal_wild;human;kinship,,131.82567385564073,0.05738153302232606
+ch’am,filthy,,sucio,estar,cleanliness,animal_domesticated;human;kinship,,,541.1695265464632,0.23556213406660081
+ch'am,filthy,,mugroso,estar,cleanliness,animal_domesticated;human;kinship,,,341.4548873833601,0.1486296585707498
+t'ant'oo,flat,,plano,ser,shape,,beverage;emotion;human;kinship;occupation,,1401.7374183467693,0.6101530878391449
+mem,foolish,more foolish,tonto,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,844.6303185839678,0.3676535920503462
+meqes,foolish,more foolish,tonto,ser,intelligence,human;kinship,,,844.6303185839678,0.3676535920503462
+xujxuj,fragile,more fragile,frágil,ser,appearance,artifact;tool,,,374.3978389823811,0.16296917992303325
+chaab'il,fresh,more fresh,fresco,estar,freshness,fruit;vegetable,,,1659.5869074375614,0.7223907008951246
+nujenaq,full,,lleno,estar,crowdedness,building;container;place,,,4935.524741394806,2.1483521961055017
+se'se' ru,funny,,humorístico,ser,temperament,human;kinship;occupation,,,2221.6040919558095,0.967027475275388
+q’anjorin,golden,,dorado,ser,color,clothing,emotion,,1298.175275049849,0.5650742016734451
+rax,green,,verde,ser,color,clothing;fruit;vegetable,emotion,,2630.2679918953813,1.1449121041458945
+cha,grey,,gris,ser,color,clothing,emotion,,969.7653591082496,0.422122803168943
+josq',grumpy,,gruñón,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,205.746915604784,0.08955822554676418
+tojel,guilty,,culpable,estar,,human;kinship,,,1183.949922229303,0.5153537969665697
+sa ch'oolej,happy,,feliz,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,3686.9450645195734,1.604866137099434
+kaw rib',hard,,duro,estar,texture,tool,,,4860.340175990221,2.115625599712322
+k’urux,harsh,,áspero,ser,,human;kinship,,,575.4399373371566,0.2504794764245721
+raalil,heavy,,pesado,ser,weight,artifact;tool,,,2026.1270126211432,0.8819395394061337
+tiik,honest,more honest,honesto,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1423.420883864343,0.61959154133795
+tiq,hot,,caliente,estar,temperature,food,,,2754.2287033381663,1.198870149260191
+aajel ru,important,more important,importante,ser,importance,,,,4501.252062061341,1.9593204896022924
+seeb',intelligent,more intelligent,inteligente,ser,intelligence,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1318.2567385564062,0.5738153302232601
+sahil ch'oolej,joyful,more joyful,gozoso,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,184.78497974222907,0.08043384195949524
+chaab'il,kind,,amable,ser,morality,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,4298.662347082277,1.8711365412100773
+nim,large,,grande,ser,size,animal_domesticated;animal_wild,emotion,,3920.426655270152,1.706496807498516
+jok,lazy,,perezoso,ser,,human;kinship;occupation;animal_domesticated,,,670.9137099554113,0.2920376287633929
+moko aal ta,light,,liviano,ser,weight,fruit;tool;vegetable,,,3575.4716045062128,1.556343585764902
+b’arb’okil,log-shaped,,alargado,ser,shape,artifact;tool,beverage;emotion;human;kinship;occupation,,524.8074602497728,0.228439997535403
+najt,long,,largo,ser,size,artifact;tool,beverage;emotion;human;kinship;occupation,,7470.218989273311,3.2516626320181103
+tzipix,multicolored,,multicolor,ser,color,clothing,emotion,,87.0963589956081,0.037911602904482346
+mem,naïve,more naïve,ingenuo,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,263.02679918953817,0.11449121041458947
+yach,naked,more naked,desnudo,estar,appearance,human;kinship;occupation,,,898.1178609606941,0.3909358335849823
+jay,narrow,,angosto,ser,size,,beverage;emotion;human;kinship;occupation,,844.6303185839678,0.3676535920503462
+tento,necessary,more necessary,necesario,ser,importance,,,,2590.200204531325,1.1274712597601502
+xiw,nervous,more nervous,nervioso,estar,emotion,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,884.4365191385999,0.3849805720293772
+b’it’ b’it’,nice,,agradable,ser,temperament,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,3801.8939632056126,1.65490148934088
+t'inis,obese,more obese,obeso,ser,weight,human;kinship;occupation,,,284.00980479142163,0.1236247653105094
+cheek,old,,viejo,ser,age,animal_domesticated;animal_wild;human;kinship,,,6812.920690579615,2.9655515663290863
+kaqiq'an,orange,,anaranjado,ser,color,clothing,emotion,,1202.2644346174131,0.5233258009522044
+b’aqb’o,oval-shaped,,ovalado,ser,shape,artifact;tool,beverage;emotion,,357.5471604506213,0.15563435857649022
+saqikaq,pink,,rosado,ser,color,clothing,emotion,,1031.177274593055,0.44885439310350017
+q'eqmoyin,purple,,morado,ser,color,clothing,emotion,,758.5775750291843,0.3301962576667733
+kaq,red,,rojo,ser,color,clothing,emotion,,3521.0052016845207,1.532635262486822
+q'an,ripe,,maduro,estar,freshness,fruit;vegetable,,,1096.478196143184,0.4772788029830232
+q’eenak,rotten,more rotten,podrido,estar,freshness,fruit;vegetable,,,346.73685045253166,0.15092880963451208
+q'aynaq,rotten,more rotten,podrido,estar,freshness,fruit;vegetable,,,346.73685045253166,0.15092880963451208
+q'eenak,rotten,more rotten,podrido,estar,freshness,food;fruit;vegetable,,,346.73685045253166,0.15092880963451208
+t'ort'oo,round,,redondo,ser,shape,artifact;building,beverage;emotion;human;kinship;occupation,,2670.9555875589826,1.1626227408214687
+k’ul ru,sad,,triste,estar,emotion,human;kinship,,,1711.3283041617792,0.7449128741404004
+ra ch'oolej,sad,,triste,estar,emotion,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1711.3283041617792,0.7449128741404004
+atz'amil,salty,,salado,estar,taste,food,,,311.41055844467616,0.13555185966629194
+rahb’il,scarce,,escaso,ser,,fruit;vegetable,animal_domesticated;body_part;human;kinship,,357.5471604506213,0.15563435857649022
+kach'in roq,short,,corto,ser,size,human;kinship;occupation,emotion,,3575.4716045062128,1.556343585764902
+xutaan,shy,,tímido,ser,temperament,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,593.3805862753281,0.2582887438409859
+yaj,sick,,enfermo,estar,health,human;kinship;occupation;animal_domesticated;animal_wild,artifact;body_part;building;fruit;food;tool;vegetable,,1791.980722375334,0.7800195363230609
+pelek,skinny,,delgado,ser,shape,human;kinship,,,566.6740605819913,0.24666383542093132
+saqirax,sky blue,,celeste,ser,color,clothing,emotion,,2630.2679918953813,1.1449121041458945
+yolyol,slippery,more slippery,resbaloso,ser,texture,,human;kinship;occupation;animal_domesticated;animal_wild,,255.07427837113593,0.11102960978244251
+timil,slow,,lento,ser,speed,vehicle,,,1711.3283041617792,0.7449128741404004
+kach'in,small,,pequeño,ser,size,animal_domesticated;animal_wild;human;kinship,emotion,,4713.389536157405,2.051660419443624
+seeb',smart,,listo,ser,intelligence,human;kinship;occupation,artifact;body_part;building;fruit;food;tool;vegetable,,1659.5869074375614,0.7223907008951246
+q'un ru,smooth,,liso,estar,texture,clothing,,,857.6958985908946,0.3733408226837683
+q'un,soft,,suave,ser,texture,clothing,,,1318.2567385564062,0.5738153302232601
+ra li re,sour,more sour,agrio,estar,taste,food,,,386.0705432153811,0.16805011479569862
+remrem,sour,more sour,agrio,ser,taste,food;fruit,,,386.0705432153811,0.16805011479569862
+ra,spicy,more spicy,picante,estar,taste,food,,,341.4548873833601,0.1486296585707498
+q'aynaq,stale,,viejo,estar,freshness,food;fruit,,,2255.970068843577,0.981986415973005
+t’ayt’ay,sticky,,pegajoso,ser,,plant,,,341.4548873833601,0.1486296585707498
+mem,stupid,more stupid,estúpido,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1964.867789993468,0.8552744141439534
+ki',sweet,,dulce,estar,taste,food,,,1876.4341719560857,0.8167807245213026
+nim roq,tall,,alto,ser,size,human;kinship,emotion,,3362.533862951628,1.4636553127499328
+ch’axch’ax,tasteless,more tasteless,insípido,ser,taste,food,,,104.71285480508996,0.04557977183139732
+t’ikt’o,thick,,grueso,ser,,plant;wood,,thick / wide,940.4448517263513,0.4093600718029106
+kach'in,tiny,,diminuto,ser,size,animal_domesticated;animal_wild;human;kinship,emotion,,1202.2644346174131,0.5233258009522044
+t’omt’o,toothless,more toothless,desdentado,ser,,human;kinship,,,94.04448517263518,0.04093600718029108
+b’arxuk,triangular,,triangular,ser,shape,artifact;tool,beverage;emotion,,190.54607179632464,0.0829415499368408
+aj tzajil,troublesome,more troublesome,travieso,ser,temperament,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,devilish / troublesome,181.97008586099844,0.07920856526280974
+yokos,twisted,more twisted,torcido,estar,,wood,,,450.12520620613367,0.19593204896022903
+xab'etal,ugly,uglier,feo,ser,appearance,human;kinship;occupation;animal_domesticated;animal_wild;artifact;tool,,,884.4365191385999,0.3849805720293772
+yib' ru,ugly,,feo,ser,appearance,animal_domesticated;animal_wild;human;kinship,,,884.4365191385999,0.3849805720293772
+ham ham,very dry,drier,reseco,estar,,food,,,1445.439770745928,0.6291759982025069
+liq’liq’,very flexible,more flexible,muy flexible,ser,,,,,566.6740605819913,0.24666383542093132
+ch'ina us,very pretty,prettier,lindísimo,ser,,human;kinship,,,3860.705432153811,1.680501147956986
+wej wej,very stiff,stiffer,rígido,estar,,wood,,,398.1071705534973,0.1732894593700787
+lujuch,very tall,taller,altísimo,ser,size,human;kinship,,,1031.177274593055,0.44885439310350017
+yunyu’,very tall,,altísimo,ser,size,plant,emotion,,1031.177274593055,0.44885439310350017
+saq ch'oolej,virtuous,more virtuous,virtuoso,ser,morality,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,142.34208838643414,0.061959154133794936
+t’oq’t’oq’,weak,,débil,estar,,animal_domesticated;animal_wild;human;kinship,,weak (again),1278.3997194630244,0.5564662297757792
+takatz,weak,,débil,ser,,animal_domesticated;animal_wild;human;kinship,,,1278.3997194630244,0.5564662297757792
+b’akx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,,1063.3265716371616,0.46284844976958744
+lanlan,wet,,empapado,estar,,plant,human;kinship,"humid but in a way that denotes nature: tree is wet, grass is wet",1063.3265716371616,0.46284844976958744
+t’oqx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,wet (again),1063.3265716371616,0.46284844976958744
+t'aqt'aq,wet,,empapado,estar,,animal_domesticated;animal_wild;human;kinship,,,1063.3265716371616,0.46284844976958744
+tz’uqx,wet,,mojado,estar,,animal_domesticated;animal_wild;human;kinship,,wet (again),1063.3265716371616,0.46284844976958744
+saq,white,whiter,blanco,ser,color,building;clothing,emotion,,4713.389536157405,2.051660419443624
+seeb',wise,wiser,sabio,ser,intelligence,human;kinship,artifact;body_part;building;fruit;food;tool;vegetable,,1015.4689924330796,0.4420168379814705
+q'an,yellow,,amarillo,ser,color,clothing;corn,emotion,,1338.648842069994,0.58269167522447
+saaj,young,,joven,ser,age,animal_domesticated;human;kinship;occupation,,,4168.693834703351,1.8145633998271566
