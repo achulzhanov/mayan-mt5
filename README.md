@@ -9,7 +9,16 @@ This repository contains the data generation and training pipeline for fine-tuni
 **Status:** Phase 1 complete. The accompanying academic research paper detailing the synthetic data curriculum, methodology, and metrics is currently under peer review. Phase 2 (synthetic/authentic mixture training) and Phase 3 (community-in-the-loop RLHF) is currently in active planning.
 
 ## Data and Model Weights
-*Due to double-blind review constraints and file hosting limits, the complete 1.3M-sentence synthetic datasets and the pre-trained LoRA adapter weights have been withheld for this anonymous review. The complete pipeline to generate the data and train the models (both STL and MTL) is provided below. Full datasets and weights will be publicly released on Hugging Face upon de-anonymization/acceptance.*
+The complete synthetic datasets and pre-trained LoRA adapter weights utilized in this study are publicly available via Hugging Face.
+
+**Datasets (1.3M total sentence pairs)**
+The datasets include both the baseline translation corpora and the expanded Multi-Task Learning (MTL) corpora featuring POS and semantic tagging.
+* **Dataset Repository:** [achulz/mayan-mt5-qeqchi-dataset](https://huggingface.co/datasets/achulz/mayan-mt5-qeqchi-dataset)
+
+**Model Weights (LoRA Adapters)**
+The adapters are designed to be loaded onto Google's `mT5-base` model. We provide weights for both the Single-Task (STL) baseline and the Multi-Task (MTL) ablation study.
+* **Baseline (STL) Adapter:** [achulz/mayan-mt5-qeqchi-adapter](https://huggingface.co/achulz/mayan-mt5-qeqchi-adapter)
+* **MTL Adapter:** [achulz/mayan-mt5-qeqchi-mtl-adapter](https://huggingface.co/achulz/mayan-mt5-qeqchi-mtl-adapter)
 
 ## Repository Structure
 The codebase is modularized into three primary workflows:
@@ -195,4 +204,19 @@ python3 training/utils/evaluate_adapters.py \
 ```
 
 ## Citation
-*Placeholder: Citation details will be added upon the successful publication of the accompanying research paper.*
+
+This project and the accompanying methodology have been accepted for publication at the International Conference on Text, Speech, and Dialogue (TSD 2026). If you utilize this codebase, the synthetic generator, or the provided datasets in your research, please cite our work:
+
+**Plain Text:**
+> Chulzhanov, A., Eberhardt, S., & Mukherjee, A. (2026). Data Synthesis and Parameter-Efficient Fine-Tuning for Low-Resource NMT: A Case Study on Q'eqchi' Mayan. *In Proceedings of the International Conference on Text, Speech, and Dialogue (TSD).* Springer. (To appear).
+
+**BibTeX:**
+```bibtex
+@inproceedings{chulzhanov2026mayan,
+  title={Data Synthesis and Parameter-Efficient Fine-Tuning for Low-Resource NMT: A Case Study on Q'eqchi' Mayan},
+  author={Chulzhanov, Alexander and Eberhardt, Soeren and Mukherjee, Arjun},
+  booktitle={Proceedings of the International Conference on Text, Speech, and Dialogue (TSD)},
+  year={2026},
+  publisher={Springer},
+  note={To appear}
+}
